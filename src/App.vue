@@ -1,7 +1,7 @@
 <template>
 <div class="bg-gray-200  min-h-screen min-w-full">
-  <div class="container bg-gray-200 mx-auto px-10">
-    <div id="" class="py-12">
+  <div class="bg-gray-200">
+    <div id="" class="container px-16 mx-auto py-12">
       <Navbar></Navbar>
     </div>
     <router-view/>
