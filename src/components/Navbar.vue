@@ -9,13 +9,13 @@
           <router-link to="/" class="" active-class="font-bold border-b text-indigo-900 border-indigo-900">Home</router-link>
         </li>
         <li class="pr-8 ">
-          <router-link to="/about" class="">About</router-link>
+          <router-link to="/about" class="" active-class="font-bold border-b text-indigo-900 border-indigo-900">About</router-link>
         </li>
         <li class="pr-8">
-          <router-link to="/services">Services</router-link>
+          <router-link to="/services" active-class="font-bold border-b text-indigo-900 border-indigo-900">Services</router-link>
         </li>
         <li class="">
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/contact" active-class="font-bold border-b text-indigo-900 border-indigo-900">Contact</router-link>
         </li>
       </ul>
     </div>
