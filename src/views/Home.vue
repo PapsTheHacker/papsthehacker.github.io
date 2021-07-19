@@ -159,10 +159,8 @@
           <div class="my-4 flex flex-row">
             <img
                 alt="Author's Image"
-                class="rounded-full ring-2 ring-pink-500 p-1"
-                height="48"
+                class="rounded-full ring-2 ring-pink-500 p-1 h-12 w-12"
                 src="/promise-as-logo.jpg"
-                width="48"
             />
             <div class="flex flex-col pl-5 text-left">
               <p class="font-bold">Promise Atokple</p>
