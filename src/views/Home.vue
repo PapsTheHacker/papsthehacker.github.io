@@ -159,7 +159,7 @@
           <div class="my-4 flex flex-row">
             <img
                 alt="Author's Image"
-                class="rounded-full ring-2 ring-pink-500 p-1 h-12 w-12"
+                class="rounded-full max-h-12 ring-2 ring-pink-500 p-1 h-12 w-12"
                 src="/promise-as-logo.jpg"
             />
             <div class="flex flex-col pl-5 text-left">

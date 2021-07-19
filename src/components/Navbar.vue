@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between" data-aos="zoom-in">
-    <div class="">
+    <div class="max-h-12">
       <img alt="Logo" class="rounded-full h-12 w-12"  src="/promise-as-logo.jpg">
     </div>
     <div class="flex pt-3 ">
