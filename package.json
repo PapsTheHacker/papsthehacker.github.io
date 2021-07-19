@@ -9,6 +9,7 @@
     "tailwind": "npx tailwindcss build -i src/assets/style.css -o .tailwind/tailwind.css"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
     "postcss": "^7",
