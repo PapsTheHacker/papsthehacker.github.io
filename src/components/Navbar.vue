@@ -10,15 +10,15 @@
           </router-link>
         </li>
         <li class="pr-8 ">
-          <router-link active-class="font-bold border-b text-indigo-900 border-indigo-900" class="" to="/about">About
+          <router-link  class="" to="#about">About
           </router-link>
         </li>
         <li class="pr-8">
-          <router-link active-class="font-bold border-b text-indigo-900 border-indigo-900" to="/services">Services
+          <router-link  to="#services">Services
           </router-link>
         </li>
         <li class="pr-8">
-          <router-link active-class="font-bold border-b text-indigo-900 border-indigo-900" to="/blogs">Blog
+          <router-link  to="#blogs">Blog
           </router-link>
         </li>
         <li class="">
@@ -70,9 +70,9 @@
         </a>
       </li>
     </ul>
-    <ul class="my-auto lg:hidden pt-3">
+    <ul class="my-auto cursor-pointer bg-gray-300 md:bg-white rounded-xl px-3 lg:hidden py-3">
       <li class="">
-        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+        <svg width="24" height="24" class="" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
       </li>
     </ul>
   </div>

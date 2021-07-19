@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 lg:px-16">
+  <section class="container mx-auto px-4 pt-28 md:pt-0 lg:px-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col">
         <div class="lg:pt-24 space-x-3 md:max-w-md">
@@ -128,10 +128,10 @@
   </section>
 
   <section>
-    <div class="relative my-16">
-      <div class="w-2/3 bg-pink-100 h-screen rounded-r-3xl"></div>
-      <div class="absolute left-0 top-0 w-full">
-        <div class="container py-16 px-4 lg:px-16 mx-auto">
+    <div class="relative  mt-16">
+<!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
+      <div class="w-full z-20">
+        <div class="container pt-16 px-4 lg:px-16 mx-auto">
           <div
               class="text-left uppercase text-gray-300 tracking-widest font-bold"
           >
@@ -146,15 +146,14 @@
             <p class="pb-6">
               Hi, my name is Promise and I’m a freelance web designer from
               Ghana. I have over 2 years experience in leading teams and
-              shipping complex digital products. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. In fermentum, libero id efficitur
-              dapibus, nisl metus euismod ex, non elementum quam urna eu risus.
+              shipping complex digital products. As a web developer, I enjoy using my obsessive attention to detail, my
+              unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's
+              why I’m excited to make a big impact at a high growth company.
             </p>
             <p class="hidden lg:block">
-              Vestibulum at pulvinar nisi, non commodo erat. Aliquam lobortis
-              posuere magna sed tincidunt. Sed facilisis vestibulum eros eget
-              varius. Nam eget velit sed neque dignissim rutrum. Nullam
-              efficitur ornare tellus eget condimentum.
+              I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional
+              path has taken many twists and turns, I've never stopped
+              engaging my passion to help others and solve problems.
             </p>
           </div>
           <div class="my-4 flex flex-row">
@@ -168,7 +167,7 @@
             <div class="flex flex-col pl-5 text-left">
               <p class="font-bold">Promise Atokple</p>
               <p class="text-sm text-opacity-50 text-gray-800">
-                Software developer at Tinkerings
+                Fullstack Software Developer
               </p>
             </div>
           </div>
@@ -186,8 +185,14 @@
                 transition duration-500 border-2 cursor-pointer hover:border-purple-600
               "
             >
-              <img alt="Slack logo" class="mx-auto" height="72" src="/images/brands/slack.svg" width="72">
-              <div class="mx-auto pt-3">Slack</div>
+
+              <i class="text-center mx-auto transform scale-150">
+                <svg fill="#F83F37" height="50" viewBox="0 0 24 24" width="50">
+                  <path
+                      d="M21.7 6.53C21.71 6.55 21.71 6.58 21.71 6.61V10.9C21.71 11 21.65 11.12 21.56 11.17L17.95 13.25V17.36C17.95 17.47 17.9 17.57 17.8 17.63L10.28 21.96C10.26 21.97 10.24 22 10.22 22L10.2 22C10.15 22 10.09 22 10.04 22C10.03 22 10 22 10 22C10 22 10 21.97 9.96 21.96L2.44 17.63C2.35 17.58 2.29 17.47 2.29 17.36V4.5C2.29 4.45 2.29 4.42 2.3 4.4C2.3 4.39 2.31 4.38 2.31 4.37C2.31 4.35 2.32 4.34 2.33 4.32C2.33 4.31 2.34 4.3 2.35 4.29C2.36 4.28 2.37 4.27 2.38 4.26C2.39 4.25 2.4 4.24 2.41 4.23C2.42 4.22 2.43 4.21 2.44 4.21L6.2 2.04C6.3 2 6.42 2 6.5 2.04L10.28 4.21H10.28C10.29 4.22 10.3 4.22 10.31 4.23C10.32 4.24 10.33 4.25 10.34 4.26C10.35 4.27 10.36 4.28 10.37 4.29C10.38 4.3 10.39 4.31 10.39 4.32C10.4 4.34 10.41 4.35 10.41 4.37C10.41 4.38 10.42 4.39 10.42 4.4C10.43 4.43 10.43 4.45 10.43 4.5V12.5L13.57 10.72V6.61C13.57 6.58 13.57 6.55 13.58 6.53L13.59 6.5C13.59 6.5 13.6 6.47 13.61 6.45C13.61 6.44 13.62 6.43 13.63 6.42C13.64 6.41 13.65 6.4 13.66 6.39C13.67 6.38 13.68 6.37 13.69 6.36C13.7 6.35 13.71 6.34 13.72 6.34L17.5 4.17C17.58 4.11 17.7 4.11 17.8 4.17L21.56 6.34C21.57 6.34 21.58 6.35 21.59 6.36L21.62 6.39C21.63 6.4 21.64 6.41 21.65 6.42C21.66 6.43 21.66 6.44 21.67 6.45C21.68 6.47 21.68 6.5 21.69 6.5C21.7 6.5 21.7 6.5 21.7 6.53M21.09 10.72V7.15L17.95 8.95V12.5L21.09 10.72M17.33 17.18V13.6L10.43 17.54V21.15L17.33 17.18M2.91 5V17.18L9.81 21.15V17.54L6.21 15.5L6.2 15.5L6.2 15.5C6.19 15.5 6.18 15.5 6.17 15.47C6.16 15.47 6.15 15.46 6.14 15.45V15.45C6.13 15.44 6.12 15.43 6.11 15.42C6.1 15.41 6.1 15.4 6.09 15.39V15.39C6.08 15.37 6.08 15.36 6.07 15.35C6.07 15.33 6.06 15.32 6.06 15.31C6.05 15.3 6.05 15.28 6.05 15.27C6.05 15.25 6.05 15.24 6.05 15.23V6.82L2.91 5M6.36 2.68L3.23 4.5L6.36 6.28L9.5 4.5L6.36 2.68M9.81 12.88V5L6.67 6.82V14.69L9.81 12.88M17.64 4.8L14.5 6.61L17.64 8.41L20.77 6.61L17.64 4.8M17.33 8.95L14.19 7.15V10.72L17.33 12.5V8.95M10.12 17L17 13.06L13.88 11.26L7 15.23L10.12 17Z"/>
+                </svg>
+              </i>
+              <div class="mx-auto pt-3">Laravel</div>
             </div>
             <div
                 class="
@@ -201,8 +206,13 @@
                 transition duration-500 border-2 cursor-pointer hover:border-purple-600
               "
             >
-              <img alt="Slack logo" class="mx-auto" height="72" src="images/brands/dribbble.svg" width="72">
-              <div class="mx-auto pt-3">Dribbble</div>
+              <i class="text-center mx-auto transform scale-150">
+                <svg fill="#689F63" height="50" viewBox="0 0 24 24" width="50">
+                  <path
+                      d="M12,1.85C11.73,1.85 11.45,1.92 11.22,2.05L3.78,6.35C3.3,6.63 3,7.15 3,7.71V16.29C3,16.85 3.3,17.37 3.78,17.65L5.73,18.77C6.68,19.23 7,19.24 7.44,19.24C8.84,19.24 9.65,18.39 9.65,16.91V8.44C9.65,8.32 9.55,8.22 9.43,8.22H8.5C8.37,8.22 8.27,8.32 8.27,8.44V16.91C8.27,17.57 7.59,18.22 6.5,17.67L4.45,16.5C4.38,16.45 4.34,16.37 4.34,16.29V7.71C4.34,7.62 4.38,7.54 4.45,7.5L11.89,3.21C11.95,3.17 12.05,3.17 12.11,3.21L19.55,7.5C19.62,7.54 19.66,7.62 19.66,7.71V16.29C19.66,16.37 19.62,16.45 19.55,16.5L12.11,20.79C12.05,20.83 11.95,20.83 11.88,20.79L10,19.65C9.92,19.62 9.84,19.61 9.79,19.64C9.26,19.94 9.16,20 8.67,20.15C8.55,20.19 8.36,20.26 8.74,20.47L11.22,21.94C11.46,22.08 11.72,22.15 12,22.15C12.28,22.15 12.54,22.08 12.78,21.94L20.22,17.65C20.7,17.37 21,16.85 21,16.29V7.71C21,7.15 20.7,6.63 20.22,6.35L12.78,2.05C12.55,1.92 12.28,1.85 12,1.85M14,8C11.88,8 10.61,8.89 10.61,10.39C10.61,12 11.87,12.47 13.91,12.67C16.34,12.91 16.53,13.27 16.53,13.75C16.53,14.58 15.86,14.93 14.3,14.93C12.32,14.93 11.9,14.44 11.75,13.46C11.73,13.36 11.64,13.28 11.53,13.28H10.57C10.45,13.28 10.36,13.37 10.36,13.5C10.36,14.74 11.04,16.24 14.3,16.24C16.65,16.24 18,15.31 18,13.69C18,12.08 16.92,11.66 14.63,11.35C12.32,11.05 12.09,10.89 12.09,10.35C12.09,9.9 12.29,9.3 14,9.3C15.5,9.3 16.09,9.63 16.32,10.66C16.34,10.76 16.43,10.83 16.53,10.83H17.5C17.55,10.83 17.61,10.81 17.65,10.76C17.69,10.72 17.72,10.66 17.7,10.6C17.56,8.82 16.38,8 14,8Z"/>
+                </svg>
+              </i>
+              <div class="mx-auto pt-3">Node.js</div>
             </div>
 
             <div
@@ -217,8 +227,13 @@
                 transition duration-500 border-2 cursor-pointer hover:border-purple-600
               "
             >
-              <img alt="Slack logo" class="mx-auto" height="72" src="images/brands/webflow.svg" width="72">
-              <div class="mx-auto pt-3">Webflow</div>
+              <i class="text-center mx-auto transform scale-150">
+                <svg fill="#FA6E39" height="50" viewBox="0 0 24 24" width="50">
+                  <path
+                      d="M21.94 13.11L20.89 9.89C20.89 9.86 20.88 9.83 20.87 9.8L18.76 3.32C18.65 3 18.33 2.75 17.96 2.75C17.6 2.75 17.28 3 17.17 3.33L15.17 9.5H8.84L6.83 3.33C6.72 3 6.4 2.75 6.04 2.75H6.04C5.67 2.75 5.35 3 5.24 3.33L3.13 9.82C3.13 9.82 3.13 9.83 3.13 9.83L2.06 13.11C1.9 13.61 2.07 14.15 2.5 14.45L11.72 21.16C11.89 21.28 12.11 21.28 12.28 21.15L21.5 14.45C21.93 14.15 22.1 13.61 21.94 13.11M8.15 10.45L10.72 18.36L4.55 10.45M13.28 18.37L15.75 10.78L15.85 10.45H19.46L13.87 17.61M17.97 3.94L19.78 9.5H16.16M14.86 10.45L13.07 15.96L12 19.24L9.14 10.45M6.03 3.94L7.84 9.5H4.23M3.05 13.69C2.96 13.62 2.92 13.5 2.96 13.4L3.75 10.97L9.57 18.42M20.95 13.69L14.44 18.42L14.46 18.39L20.25 10.97L21.04 13.4C21.08 13.5 21.04 13.62 20.95 13.69"/>
+                </svg>
+              </i>
+              <div class="mx-auto pt-3">GitLab CI</div>
             </div>
             <div
                 class="
@@ -232,50 +247,56 @@
                 transition duration-500 border-2 cursor-pointer hover:border-purple-600
               "
             >
-              <img alt="Slack logo" class="mx-auto" height="72" src="images/brands/youtube.svg" width="72">
-              <div class="mx-auto">YouTube</div>
+              <i class="text-center mx-auto transform scale-150">
+                <svg height="50" viewBox="0 0 24 24" width="50">
+                  <path
+                      d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                </svg>
+              </i>
+              <div class="mx-auto pt-3">MySQL</div>
             </div>
           </div>
+
+          <ul class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-5">
+
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M16.5,6.08C16.5,6.08 9.66,7.79 12.94,11.56C13.91,12.67 12.69,13.67 12.69,13.67C12.69,13.67 15.14,12.42 14,10.82C12.94,9.35 12.14,8.62 16.5,6.08M12.03,7.28C16.08,4.08 14,2 14,2C14.84,5.3 11.04,6.3 9.67,8.36C8.73,9.76 10.13,11.27 12,13C11.29,11.3 8.78,9.84 12.03,7.28M9.37,17.47C6.29,18.33 11.25,20.1 15.16,18.43C14.78,18.28 14.41,18.1 14.06,17.89C12.7,18.2 11.3,18.26 9.92,18.07C8.61,17.91 9.37,17.47 9.37,17.47M14.69,15.79C12.94,16.17 11.13,16.26 9.35,16.05C8.04,15.92 8.9,15.28 8.9,15.28C5.5,16.41 10.78,17.68 15.5,16.3C15.21,16.19 14.93,16 14.69,15.79M18.11,19.09C18.11,19.09 18.68,19.56 17.5,19.92C15.22,20.6 8.07,20.81 6.09,19.95C5.38,19.64 6.72,19.21 7.14,19.12C7.37,19.06 7.6,19.04 7.83,19.04C7.04,18.5 2.7,20.14 5.64,20.6C13.61,21.9 20.18,20 18.11,19.09M15.37,14.23C15.66,14.04 15.97,13.88 16.29,13.74C16.29,13.74 14.78,14 13.27,14.14C11.67,14.3 10.06,14.32 8.46,14.2C6.11,13.89 9.75,13 9.75,13C8.65,13 7.57,13.26 6.59,13.75C4.54,14.75 11.69,15.2 15.37,14.23M16.27,16.65C16.25,16.69 16.23,16.72 16.19,16.75C21.2,15.44 19.36,12.11 16.96,12.94C16.83,13 16.72,13.08 16.65,13.19C16.79,13.14 16.93,13.1 17.08,13.07C18.28,12.83 20,14.7 16.27,16.65M16.4,21.26C13.39,21.78 10.31,21.82 7.28,21.4C7.28,21.4 7.74,21.78 10.09,21.93C13.69,22.16 19.22,21.8 19.35,20.1C19.38,20.11 19.12,20.75 16.4,21.26Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M16.61 15.15C16.15 15.15 15.77 14.78 15.77 14.32S16.15 13.5 16.61 13.5H16.61C17.07 13.5 17.45 13.86 17.45 14.32C17.45 14.78 17.07 15.15 16.61 15.15M7.41 15.15C6.95 15.15 6.57 14.78 6.57 14.32C6.57 13.86 6.95 13.5 7.41 13.5H7.41C7.87 13.5 8.24 13.86 8.24 14.32C8.24 14.78 7.87 15.15 7.41 15.15M16.91 10.14L18.58 7.26C18.67 7.09 18.61 6.88 18.45 6.79C18.28 6.69 18.07 6.75 18 6.92L16.29 9.83C14.95 9.22 13.5 8.9 12 8.91C10.47 8.91 9 9.24 7.73 9.82L6.04 6.91C5.95 6.74 5.74 6.68 5.57 6.78C5.4 6.87 5.35 7.08 5.44 7.25L7.1 10.13C4.25 11.69 2.29 14.58 2 18H22C21.72 14.59 19.77 11.7 16.91 10.14H16.91Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M5,3L4.35,6.34H17.94L17.5,8.5H3.92L3.26,11.83H16.85L16.09,15.64L10.61,17.45L5.86,15.64L6.19,14H2.85L2.06,18L9.91,21L18.96,18L20.16,11.97L20.4,10.76L21.94,3H5Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M14.62,8.35C14.2,8.63 12.87,9.39 12.67,9.54C12.28,9.85 11.92,9.83 11.53,9.53C11.33,9.37 10,8.61 9.58,8.34C9.1,8.03 9.13,7.64 9.66,7.42C11.3,6.73 12.94,6.78 14.57,7.45C15.06,7.66 15.08,8.05 14.62,8.35M21.84,15.63C20.91,13.54 19.64,11.64 18,9.97C17.47,9.42 17.14,8.8 16.94,8.09C16.84,7.76 16.77,7.42 16.7,7.08C16.5,6.2 16.41,5.3 16,4.47C15.27,2.89 14,2.07 12.16,2C10.35,2.05 9,2.81 8.21,4.4C8,4.83 7.85,5.28 7.75,5.74C7.58,6.5 7.43,7.29 7.25,8.06C7.1,8.71 6.8,9.27 6.29,9.77C4.68,11.34 3.39,13.14 2.41,15.12C2.27,15.41 2.13,15.7 2.04,16C1.85,16.66 2.33,17.12 3.03,16.96C3.47,16.87 3.91,16.78 4.33,16.65C4.74,16.5 4.9,16.6 5,17C5.65,19.15 7.07,20.66 9.24,21.5C13.36,23.06 18.17,20.84 19.21,16.92C19.28,16.65 19.38,16.55 19.68,16.65C20.14,16.79 20.61,16.89 21.08,17C21.57,17.09 21.93,16.84 22,16.36C22.03,16.1 21.94,15.87 21.84,15.63" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M3.42,12C3.42,10.76 3.69,9.58 4.16,8.5L8.26,19.72C5.39,18.33 3.42,15.4 3.42,12M17.79,11.57C17.79,12.3 17.5,13.15 17.14,14.34L16.28,17.2L13.18,8L14.16,7.9C14.63,7.84 14.57,7.16 14.11,7.19C14.11,7.19 12.72,7.3 11.82,7.3L9.56,7.19C9.1,7.16 9.05,7.87 9.5,7.9L10.41,8L11.75,11.64L9.87,17.27L6.74,8L7.73,7.9C8.19,7.84 8.13,7.16 7.67,7.19C7.67,7.19 6.28,7.3 5.38,7.3L4.83,7.29C6.37,4.96 9,3.42 12,3.42C14.23,3.42 16.27,4.28 17.79,5.67H17.68C16.84,5.67 16.24,6.4 16.24,7.19C16.24,7.9 16.65,8.5 17.08,9.2C17.41,9.77 17.79,10.5 17.79,11.57M12.15,12.75L14.79,19.97L14.85,20.09C13.96,20.41 13,20.58 12,20.58C11.16,20.58 10.35,20.46 9.58,20.23L12.15,12.75M19.53,7.88C20.2,9.11 20.58,10.5 20.58,12C20.58,15.16 18.86,17.93 16.31,19.41L18.93,11.84C19.42,10.62 19.59,9.64 19.59,8.77L19.53,7.88M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,21.54C17.26,21.54 21.54,17.26 21.54,12C21.54,6.74 17.26,2.46 12,2.46C6.74,2.46 2.46,6.74 2.46,12C2.46,17.26 6.74,21.54 12,21.54Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M7 7H5A2 2 0 0 0 3 9V17H5V13H7V17H9V9A2 2 0 0 0 7 7M7 11H5V9H7M14 7H10V17H12V13H14A2 2 0 0 0 16 11V9A2 2 0 0 0 14 7M14 11H12V9H14M20 9V15H21V17H17V15H18V9H17V7H21V9Z" /></svg></li>
+              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z" /></svg></li>
+
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="relative pt-96 lg:pt-44">
+  <section class="relative pt-32 lg:pt-44">
     <div class="container mx-auto px-4 lg:px-16">
       <div class="flex flex-col justify-center text-center">
         <div class="uppercase text-gray-400">Companies</div>
         <div class="font-bold pt-3 pb-16 text-5xl">Customers & Clients</div>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-        <div
-            class="hover:bg-white bg-blue-50 p-1 transition duration-500 border-2 cursor-pointer hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          Company 1
+      <div  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div v-for="company in companies" :key="company"
+            class="hover:bg-white bg-blue-50 p-1 text-gray-500 transition duration-500 border-2 hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
+          {{company}}
         </div>
         <div
-            class="hover:bg-white bg-blue-50 p-1 transition duration-500 border-2 cursor-pointer hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          Company 2
-        </div>
-        <div
-            class="hover:bg-white bg-blue-50 p-1 transition duration-500 border-2 cursor-pointer hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          Company 3
-        </div>
-        <div
-            class="hover:bg-white bg-blue-50 p-1 transition duration-500 border-2 cursor-pointer hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          Company 4
-        </div>
-
-        <div
-            class="hover:bg-white cursor-pointer transition duration-500 border-2  disabled hover:border-purple-600 flex flex-col flex-nowrap p-1   h-44 rounded-xl text-center font-medium text-xl my-auto  justify-center">
-          <a href="#" class="flex flex-row justify-center">
+            class="hover:bg-white transition duration-500 border-2  disabled hover:border-purple-600 flex flex-col flex-nowrap p-1   h-44 rounded-xl text-center font-medium text-xl my-auto  justify-center">
+          <div class="flex flex-row justify-center select-none" aria-disabled="true">
             <span>See all companies</span>
             <i class="transform my-auto scale-75">
               <svg height="24" viewBox="0 0 24 24" width="24">
                 <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
               </svg>
             </i>
-          </a>
-
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -355,6 +376,12 @@
       </div>
     </div>
   </section>
+  <section class="container mx-auto px-4 py-4  lg:px-16">
+<div class="flex flex-row justify-between">
+  <div class="text-black text-opacity-50">&copy;&ensp; {{new Date().getFullYear()}} Promise Atokple</div>
+  <div class="text-black text-opacity-50">Thank you</div>
+</div>
+  </section>
 </template>
 
 <script>
@@ -423,7 +450,9 @@ export default {
       }, {
         title: 'How Vue.JS helped my business and career',
         slug: '',
-      }]
+      }],
+      companies: ['Universal Technologies', 'Scynett Ghana', 'Koforidua Technical University', '3DGhana'],
+      colors: ['red', 'blue', 'indigo', 'orange',],
     }
   },
   components: {Expertise, Project},

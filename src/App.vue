@@ -1,7 +1,7 @@
 <template>
-  <div id="wrapper" class="bg-gray-200 box-border pb-32 font-sans">
-    <div class="">
-      <div id="" class="container px-4 lg:px-16 mx-auto py-6 lg:py-12">
+  <div id="wrapper" class="bg-gray-200 box-border  font-sans">
+    <div class="w-full">
+      <div id="" class="container  fixed md:relative bg-white md:bg-transparent z-40 px-4 lg:px-16 md:mx-auto py-6 lg:py-12">
         <Navbar></Navbar>
       </div>
       <router-view/>
