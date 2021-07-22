@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70df595d0d3a1a5b26f129dc71bbe0c2",
-    "url": "/Hero Person.png"
+    "revision": "653853d60d301ef80a4b",
+    "url": "/css/app.8d98f022.css"
   },
   {
-    "revision": "bc9cbafc72bc70c46bcc",
-    "url": "/css/app.f3269493.css"
+    "revision": "3fc945cd65bae0c57846",
+    "url": "/css/chunk-vendors.83f569f6.css"
   },
   {
     "revision": "859858d2109d53a006c1ffdd22b6550e",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "57bf780e061c230a09cc73b8d76c4700",
     "url": "/images/brands/youtube.svg"
+  },
+  {
+    "revision": "830277865be0d305f160aa8cb952fc15",
+    "url": "/images/developer.svg"
   },
   {
     "revision": "1df5ae3ab798bb406e4b31c3cc6c077c",
@@ -48,7 +52,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/images/projects/project-sample-6.png"
   },
   {
-    "revision": "c100201b7454058ae3501aff1392eaa5",
+    "revision": "181fab571482379c9b6fe2898f366d9b",
     "url": "/index.html"
   },
   {
@@ -56,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/about.b2adc6fe.js"
   },
   {
-    "revision": "bc9cbafc72bc70c46bcc",
-    "url": "/js/app.43d78254.js"
+    "revision": "653853d60d301ef80a4b",
+    "url": "/js/app.3fdb1cf3.js"
   },
   {
-    "revision": "ee25d71da8af9b1f9e33",
-    "url": "/js/chunk-vendors.8360cba8.js"
+    "revision": "3fc945cd65bae0c57846",
+    "url": "/js/chunk-vendors.bd40eda4.js"
   },
   {
     "revision": "38c559f366d41acc5f74",

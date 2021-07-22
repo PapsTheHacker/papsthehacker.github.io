@@ -1,11 +1,12 @@
 <template>
-  <section class="container mx-auto px-4 pt-28 md:pt-0 lg:px-16">
+  <section class="container mx-auto px-4 pt-12 md:pt-0 lg:px-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col">
-        <div class="lg:pt-24 space-x-3 md:max-w-md">
+        <div class="lg:pt-24 space-x-3 md:max-w-md" data-aos="zoom-in" data-aos-easing="ease-in-out">
           <h1 class="text-4xl lg:text-8xl text-left font-bold">
             Hey, I'm a
-            <span class="text-black animate-bounce">software</span> developer<span
+            <span class="text-black animate__animated animate__rubberBand animate__delay-2s an">software</span>
+            developer<span
               class="rounded-full"
           >.</span
           >
@@ -55,7 +56,7 @@
         </div>
       </div>
 
-      <div class="m overflow-hidden justify-end">
+      <div class="overflow-hidden justify-end">
         <div
             class="
             text-right
@@ -63,7 +64,7 @@
             h-auto
             ml-auto
             py-12
-            w-3/4
+            md:w-3/4
             overflow-hidden
             rounded-tl-full rounded-bl-full rounded-br-full
           "
@@ -83,7 +84,7 @@
       >
         My Skills
       </div>
-      <div class="text-5xl pb-10 text-center font-bold">My Expertise</div>
+      <div class="text-5xl md:pb-10 text-center font-bold">My Expertise</div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -93,13 +94,13 @@
     </div>
   </section>
 
-  <div class="pb-28 mt-16 container mx-auto px-4 lg:px-16">
-    <div class="text-left -mb-16 text-gray-400 font-bold tracking-widest">
+  <div class="pb-12 lg:pb-16 mt-16 container mx-auto px-4 lg:px-16">
+    <div class="text-left  text-gray-400 font-bold tracking-widest">
       PORTFOLIO
     </div>
-    <div class="flex justify-between">
-      <div class="text-3xl lg:pt-20 lg:text-5xl text-left font-bold">All Creative Works</div>
-      <div class="text-right font-medium lg:pt-24">
+    <div class="flex flex-col lg:flex-row  justify-between">
+      <div class="text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
+      <div class="text-left lg:text-right font-medium pt-4 lg:pt-4 ">
         <span class="bg-pink-500 p-2 text-sm text-white rounded-md">New</span>
         Discover all projects on
         <router-link
@@ -129,11 +130,11 @@
 
   <section>
     <div class="relative  mt-16">
-<!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
+      <!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
       <div class="w-full z-20">
         <div class="container pt-16 px-4 lg:px-16 mx-auto">
           <div
-              class="text-left uppercase text-gray-300 tracking-widest font-bold"
+              class="text-left uppercase text-gray-400 tracking-widest font-bold"
           >
             Nice to meet you.
           </div>
@@ -142,19 +143,26 @@
               Hey, I'm Promise, software developer and designer
             </p>
           </div>
-          <div class="text-left">
-            <p class="pb-6">
-              Hi, my name is Promise and I’m a freelance web designer from
-              Ghana. I have over 2 years experience in leading teams and
-              shipping complex digital products. As a web developer, I enjoy using my obsessive attention to detail, my
-              unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's
-              why I’m excited to make a big impact at a high growth company.
-            </p>
-            <p class="hidden lg:block">
-              I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional
-              path has taken many twists and turns, I've never stopped
-              engaging my passion to help others and solve problems.
-            </p>
+          <div class="text-left  flex justify-between">
+            <div class="flex flex-col">
+              <p class="pb-6 max-w-2xl ">
+                Hi, my name is Promise and I’m a fullstack web developer from
+                Ghana. I have over 2 years experience in building responsive SPAs and
+                shipping performant products. <br class="lg:hidden"> As a web developer, I enjoy using my obsessive
+                attention to detail, my
+                unequivocal love for making things, and my mission-driven work ethic to literally change the world.
+              </p>
+
+              <p class="hidden lg:block max-w-2xl">
+                I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional
+                path has taken many twists and turns, I've never stopped
+                engaging my passion to help others and solve problems.
+              </p>
+            </div>
+<!--            <div :style="{backgroundImage: developerImage}" class="">
+
+            </div>-->
+
           </div>
           <div class="my-4 flex flex-row">
             <img
@@ -173,7 +181,7 @@
           <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             <div
                 class="
-                h-56
+                h-40 md:h-56
                 flex flex-col
                 justify-center
                 my-auto
@@ -194,7 +202,7 @@
             </div>
             <div
                 class="
-                h-56
+                h-40 md:h-56
                 flex flex-col
                 justify-center
                 my-auto
@@ -215,7 +223,7 @@
 
             <div
                 class="
-                h-56
+                h-40 md:h-56 min-w-32
                 flex flex-col
                 justify-center
                 my-auto
@@ -235,7 +243,7 @@
             </div>
             <div
                 class="
-                h-56
+                h-40 md:h-56
                 flex flex-col
                 justify-center
                 my-auto
@@ -257,35 +265,79 @@
 
           <ul class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-5">
 
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M16.5,6.08C16.5,6.08 9.66,7.79 12.94,11.56C13.91,12.67 12.69,13.67 12.69,13.67C12.69,13.67 15.14,12.42 14,10.82C12.94,9.35 12.14,8.62 16.5,6.08M12.03,7.28C16.08,4.08 14,2 14,2C14.84,5.3 11.04,6.3 9.67,8.36C8.73,9.76 10.13,11.27 12,13C11.29,11.3 8.78,9.84 12.03,7.28M9.37,17.47C6.29,18.33 11.25,20.1 15.16,18.43C14.78,18.28 14.41,18.1 14.06,17.89C12.7,18.2 11.3,18.26 9.92,18.07C8.61,17.91 9.37,17.47 9.37,17.47M14.69,15.79C12.94,16.17 11.13,16.26 9.35,16.05C8.04,15.92 8.9,15.28 8.9,15.28C5.5,16.41 10.78,17.68 15.5,16.3C15.21,16.19 14.93,16 14.69,15.79M18.11,19.09C18.11,19.09 18.68,19.56 17.5,19.92C15.22,20.6 8.07,20.81 6.09,19.95C5.38,19.64 6.72,19.21 7.14,19.12C7.37,19.06 7.6,19.04 7.83,19.04C7.04,18.5 2.7,20.14 5.64,20.6C13.61,21.9 20.18,20 18.11,19.09M15.37,14.23C15.66,14.04 15.97,13.88 16.29,13.74C16.29,13.74 14.78,14 13.27,14.14C11.67,14.3 10.06,14.32 8.46,14.2C6.11,13.89 9.75,13 9.75,13C8.65,13 7.57,13.26 6.59,13.75C4.54,14.75 11.69,15.2 15.37,14.23M16.27,16.65C16.25,16.69 16.23,16.72 16.19,16.75C21.2,15.44 19.36,12.11 16.96,12.94C16.83,13 16.72,13.08 16.65,13.19C16.79,13.14 16.93,13.1 17.08,13.07C18.28,12.83 20,14.7 16.27,16.65M16.4,21.26C13.39,21.78 10.31,21.82 7.28,21.4C7.28,21.4 7.74,21.78 10.09,21.93C13.69,22.16 19.22,21.8 19.35,20.1C19.38,20.11 19.12,20.75 16.4,21.26Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M16.61 15.15C16.15 15.15 15.77 14.78 15.77 14.32S16.15 13.5 16.61 13.5H16.61C17.07 13.5 17.45 13.86 17.45 14.32C17.45 14.78 17.07 15.15 16.61 15.15M7.41 15.15C6.95 15.15 6.57 14.78 6.57 14.32C6.57 13.86 6.95 13.5 7.41 13.5H7.41C7.87 13.5 8.24 13.86 8.24 14.32C8.24 14.78 7.87 15.15 7.41 15.15M16.91 10.14L18.58 7.26C18.67 7.09 18.61 6.88 18.45 6.79C18.28 6.69 18.07 6.75 18 6.92L16.29 9.83C14.95 9.22 13.5 8.9 12 8.91C10.47 8.91 9 9.24 7.73 9.82L6.04 6.91C5.95 6.74 5.74 6.68 5.57 6.78C5.4 6.87 5.35 7.08 5.44 7.25L7.1 10.13C4.25 11.69 2.29 14.58 2 18H22C21.72 14.59 19.77 11.7 16.91 10.14H16.91Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M5,3L4.35,6.34H17.94L17.5,8.5H3.92L3.26,11.83H16.85L16.09,15.64L10.61,17.45L5.86,15.64L6.19,14H2.85L2.06,18L9.91,21L18.96,18L20.16,11.97L20.4,10.76L21.94,3H5Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M14.62,8.35C14.2,8.63 12.87,9.39 12.67,9.54C12.28,9.85 11.92,9.83 11.53,9.53C11.33,9.37 10,8.61 9.58,8.34C9.1,8.03 9.13,7.64 9.66,7.42C11.3,6.73 12.94,6.78 14.57,7.45C15.06,7.66 15.08,8.05 14.62,8.35M21.84,15.63C20.91,13.54 19.64,11.64 18,9.97C17.47,9.42 17.14,8.8 16.94,8.09C16.84,7.76 16.77,7.42 16.7,7.08C16.5,6.2 16.41,5.3 16,4.47C15.27,2.89 14,2.07 12.16,2C10.35,2.05 9,2.81 8.21,4.4C8,4.83 7.85,5.28 7.75,5.74C7.58,6.5 7.43,7.29 7.25,8.06C7.1,8.71 6.8,9.27 6.29,9.77C4.68,11.34 3.39,13.14 2.41,15.12C2.27,15.41 2.13,15.7 2.04,16C1.85,16.66 2.33,17.12 3.03,16.96C3.47,16.87 3.91,16.78 4.33,16.65C4.74,16.5 4.9,16.6 5,17C5.65,19.15 7.07,20.66 9.24,21.5C13.36,23.06 18.17,20.84 19.21,16.92C19.28,16.65 19.38,16.55 19.68,16.65C20.14,16.79 20.61,16.89 21.08,17C21.57,17.09 21.93,16.84 22,16.36C22.03,16.1 21.94,15.87 21.84,15.63" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M3.42,12C3.42,10.76 3.69,9.58 4.16,8.5L8.26,19.72C5.39,18.33 3.42,15.4 3.42,12M17.79,11.57C17.79,12.3 17.5,13.15 17.14,14.34L16.28,17.2L13.18,8L14.16,7.9C14.63,7.84 14.57,7.16 14.11,7.19C14.11,7.19 12.72,7.3 11.82,7.3L9.56,7.19C9.1,7.16 9.05,7.87 9.5,7.9L10.41,8L11.75,11.64L9.87,17.27L6.74,8L7.73,7.9C8.19,7.84 8.13,7.16 7.67,7.19C7.67,7.19 6.28,7.3 5.38,7.3L4.83,7.29C6.37,4.96 9,3.42 12,3.42C14.23,3.42 16.27,4.28 17.79,5.67H17.68C16.84,5.67 16.24,6.4 16.24,7.19C16.24,7.9 16.65,8.5 17.08,9.2C17.41,9.77 17.79,10.5 17.79,11.57M12.15,12.75L14.79,19.97L14.85,20.09C13.96,20.41 13,20.58 12,20.58C11.16,20.58 10.35,20.46 9.58,20.23L12.15,12.75M19.53,7.88C20.2,9.11 20.58,10.5 20.58,12C20.58,15.16 18.86,17.93 16.31,19.41L18.93,11.84C19.42,10.62 19.59,9.64 19.59,8.77L19.53,7.88M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,21.54C17.26,21.54 21.54,17.26 21.54,12C21.54,6.74 17.26,2.46 12,2.46C6.74,2.46 2.46,6.74 2.46,12C2.46,17.26 6.74,21.54 12,21.54Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M7 7H5A2 2 0 0 0 3 9V17H5V13H7V17H9V9A2 2 0 0 0 7 7M7 11H5V9H7M14 7H10V17H12V13H14A2 2 0 0 0 16 11V9A2 2 0 0 0 14 7M14 11H12V9H14M20 9V15H21V17H17V15H18V9H17V7H21V9Z" /></svg></li>
-              <li class="bg-white mx-auto rounded-xl p-2"><svg width="24" height="24" :fill="colors[Math.floor(Math.random()*colors.length)]" viewBox="0 0 24 24"><path d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z" /></svg></li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M16.5,6.08C16.5,6.08 9.66,7.79 12.94,11.56C13.91,12.67 12.69,13.67 12.69,13.67C12.69,13.67 15.14,12.42 14,10.82C12.94,9.35 12.14,8.62 16.5,6.08M12.03,7.28C16.08,4.08 14,2 14,2C14.84,5.3 11.04,6.3 9.67,8.36C8.73,9.76 10.13,11.27 12,13C11.29,11.3 8.78,9.84 12.03,7.28M9.37,17.47C6.29,18.33 11.25,20.1 15.16,18.43C14.78,18.28 14.41,18.1 14.06,17.89C12.7,18.2 11.3,18.26 9.92,18.07C8.61,17.91 9.37,17.47 9.37,17.47M14.69,15.79C12.94,16.17 11.13,16.26 9.35,16.05C8.04,15.92 8.9,15.28 8.9,15.28C5.5,16.41 10.78,17.68 15.5,16.3C15.21,16.19 14.93,16 14.69,15.79M18.11,19.09C18.11,19.09 18.68,19.56 17.5,19.92C15.22,20.6 8.07,20.81 6.09,19.95C5.38,19.64 6.72,19.21 7.14,19.12C7.37,19.06 7.6,19.04 7.83,19.04C7.04,18.5 2.7,20.14 5.64,20.6C13.61,21.9 20.18,20 18.11,19.09M15.37,14.23C15.66,14.04 15.97,13.88 16.29,13.74C16.29,13.74 14.78,14 13.27,14.14C11.67,14.3 10.06,14.32 8.46,14.2C6.11,13.89 9.75,13 9.75,13C8.65,13 7.57,13.26 6.59,13.75C4.54,14.75 11.69,15.2 15.37,14.23M16.27,16.65C16.25,16.69 16.23,16.72 16.19,16.75C21.2,15.44 19.36,12.11 16.96,12.94C16.83,13 16.72,13.08 16.65,13.19C16.79,13.14 16.93,13.1 17.08,13.07C18.28,12.83 20,14.7 16.27,16.65M16.4,21.26C13.39,21.78 10.31,21.82 7.28,21.4C7.28,21.4 7.74,21.78 10.09,21.93C13.69,22.16 19.22,21.8 19.35,20.1C19.38,20.11 19.12,20.75 16.4,21.26Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M16.61 15.15C16.15 15.15 15.77 14.78 15.77 14.32S16.15 13.5 16.61 13.5H16.61C17.07 13.5 17.45 13.86 17.45 14.32C17.45 14.78 17.07 15.15 16.61 15.15M7.41 15.15C6.95 15.15 6.57 14.78 6.57 14.32C6.57 13.86 6.95 13.5 7.41 13.5H7.41C7.87 13.5 8.24 13.86 8.24 14.32C8.24 14.78 7.87 15.15 7.41 15.15M16.91 10.14L18.58 7.26C18.67 7.09 18.61 6.88 18.45 6.79C18.28 6.69 18.07 6.75 18 6.92L16.29 9.83C14.95 9.22 13.5 8.9 12 8.91C10.47 8.91 9 9.24 7.73 9.82L6.04 6.91C5.95 6.74 5.74 6.68 5.57 6.78C5.4 6.87 5.35 7.08 5.44 7.25L7.1 10.13C4.25 11.69 2.29 14.58 2 18H22C21.72 14.59 19.77 11.7 16.91 10.14H16.91Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M5,3L4.35,6.34H17.94L17.5,8.5H3.92L3.26,11.83H16.85L16.09,15.64L10.61,17.45L5.86,15.64L6.19,14H2.85L2.06,18L9.91,21L18.96,18L20.16,11.97L20.4,10.76L21.94,3H5Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M14.62,8.35C14.2,8.63 12.87,9.39 12.67,9.54C12.28,9.85 11.92,9.83 11.53,9.53C11.33,9.37 10,8.61 9.58,8.34C9.1,8.03 9.13,7.64 9.66,7.42C11.3,6.73 12.94,6.78 14.57,7.45C15.06,7.66 15.08,8.05 14.62,8.35M21.84,15.63C20.91,13.54 19.64,11.64 18,9.97C17.47,9.42 17.14,8.8 16.94,8.09C16.84,7.76 16.77,7.42 16.7,7.08C16.5,6.2 16.41,5.3 16,4.47C15.27,2.89 14,2.07 12.16,2C10.35,2.05 9,2.81 8.21,4.4C8,4.83 7.85,5.28 7.75,5.74C7.58,6.5 7.43,7.29 7.25,8.06C7.1,8.71 6.8,9.27 6.29,9.77C4.68,11.34 3.39,13.14 2.41,15.12C2.27,15.41 2.13,15.7 2.04,16C1.85,16.66 2.33,17.12 3.03,16.96C3.47,16.87 3.91,16.78 4.33,16.65C4.74,16.5 4.9,16.6 5,17C5.65,19.15 7.07,20.66 9.24,21.5C13.36,23.06 18.17,20.84 19.21,16.92C19.28,16.65 19.38,16.55 19.68,16.65C20.14,16.79 20.61,16.89 21.08,17C21.57,17.09 21.93,16.84 22,16.36C22.03,16.1 21.94,15.87 21.84,15.63"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M3.42,12C3.42,10.76 3.69,9.58 4.16,8.5L8.26,19.72C5.39,18.33 3.42,15.4 3.42,12M17.79,11.57C17.79,12.3 17.5,13.15 17.14,14.34L16.28,17.2L13.18,8L14.16,7.9C14.63,7.84 14.57,7.16 14.11,7.19C14.11,7.19 12.72,7.3 11.82,7.3L9.56,7.19C9.1,7.16 9.05,7.87 9.5,7.9L10.41,8L11.75,11.64L9.87,17.27L6.74,8L7.73,7.9C8.19,7.84 8.13,7.16 7.67,7.19C7.67,7.19 6.28,7.3 5.38,7.3L4.83,7.29C6.37,4.96 9,3.42 12,3.42C14.23,3.42 16.27,4.28 17.79,5.67H17.68C16.84,5.67 16.24,6.4 16.24,7.19C16.24,7.9 16.65,8.5 17.08,9.2C17.41,9.77 17.79,10.5 17.79,11.57M12.15,12.75L14.79,19.97L14.85,20.09C13.96,20.41 13,20.58 12,20.58C11.16,20.58 10.35,20.46 9.58,20.23L12.15,12.75M19.53,7.88C20.2,9.11 20.58,10.5 20.58,12C20.58,15.16 18.86,17.93 16.31,19.41L18.93,11.84C19.42,10.62 19.59,9.64 19.59,8.77L19.53,7.88M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,21.54C17.26,21.54 21.54,17.26 21.54,12C21.54,6.74 17.26,2.46 12,2.46C6.74,2.46 2.46,6.74 2.46,12C2.46,17.26 6.74,21.54 12,21.54Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path
+                    d="M7 7H5A2 2 0 0 0 3 9V17H5V13H7V17H9V9A2 2 0 0 0 7 7M7 11H5V9H7M14 7H10V17H12V13H14A2 2 0 0 0 16 11V9A2 2 0 0 0 14 7M14 11H12V9H14M20 9V15H21V17H17V15H18V9H17V7H21V9Z"/>
+              </svg>
+            </li>
+            <li class="bg-white mx-auto rounded-xl p-2">
+              <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z"/>
+              </svg>
+            </li>
 
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="relative pt-32 lg:pt-44">
+  <section class="relative pt-16 lg:pt-32 lg:pt-44">
     <div class="container mx-auto px-4 lg:px-16">
       <div class="flex flex-col justify-center text-center">
         <div class="uppercase text-gray-400">Companies</div>
-        <div class="font-bold pt-3 pb-16 text-5xl">Customers & Clients</div>
+        <div class="font-bold pt-1 pb-8 lg:pb-16 text-5xl">Customers & Clients</div>
       </div>
-      <div  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div v-for="company in companies" :key="company"
-            class="hover:bg-white bg-blue-50 p-1 text-gray-500 transition duration-500 border-2 hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          {{company}}
+             class="hover:bg-white bg-blue-50 p-1 text-gray-500 transition duration-500 border-2 hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
+          {{ company }}
         </div>
         <div
-            class="hover:bg-white transition duration-500 border-2  disabled hover:border-purple-600 flex flex-col flex-nowrap p-1   h-44 rounded-xl text-center font-medium text-xl my-auto  justify-center">
-          <div class="flex flex-row justify-center select-none" aria-disabled="true">
+            class="hover:bg-white transition duration-500 border-2  hidden hover:border-purple-600 lg:flex flex-col flex-nowrap p-1   h-44 rounded-xl text-center font-medium text-xl my-auto  justify-center">
+          <div aria-disabled="true" class="flex flex-row justify-center select-none">
             <span>See all companies</span>
             <i class="transform my-auto scale-75">
               <svg height="24" viewBox="0 0 24 24" width="24">
@@ -299,26 +351,26 @@
     </div>
   </section>
 
-  <section class="pt-32">
+  <section class="pt-16 lg:pt-32">
     <div class="container px-4 lg:px-16 mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div>
           <div class="text-start text-gray-500">BLOG</div>
-          <div class="text-6xl font-bold md:max-w-md">My Blog and News</div>
+          <div class="text-4xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
         </div>
         <div>
           <ul v-for="blog in blogs" :key="blog.title">
             <li class="hover:bg-white my-6 cursor-pointer rounded-lg py-6 px-6">
               <a class="flex flex-col" href="#">
-                <div class="text-gray-400 flex pb-6 flex-row">
+                <div class="text-gray-400 flex pb-2 lg:pb-6 flex-row">
                   <svg fill-opacity=".2" height="24" viewBox="0 0 24 24" width="24">
                     <path
                         d="M19,4H18V2H16V4H8V2H6V4H5C3.89,4 3,4.9 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6A2,2 0 0,0 19,4M19,20H5V10H19V20M19,8H5V6H19V8Z"/>
                   </svg>
                   <div class="pl-2">July 6, 2021</div>
                 </div>
-                <div class="flex flex-row">
-                  <div class="text-3xl pb-3 font-bold  tracking-wide">
+                <div class="flex flex-row justify-between">
+                  <div class="text-xl lg:text-3xl pb-3 font-bold  tracking-wide">
                     {{ blog.title }}
                   </div>
                   <div class="my-auto">
@@ -338,11 +390,11 @@
     </div>
   </section>
 
-  <section class="container mt-12 relative overflow-hidden px-4 lg:px-16 mx-auto">
-    <div class="rounded-3xl h-96 bg-blue-200">
-      <div class="text-center pt-16">
-        <div class="uppercase pb-6 text-lg text-gray-500">Contact me</div>
-        <div class="text-4xl font-bold">Got a Project? Let's Talk</div>
+  <section class="container mt-12 relative overflow-hidden px-0 lg:px-16 mx-auto">
+    <div class="lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
+      <div class="text-center pt-8 lg:pt-16">
+        <div class="uppercase pb-2 lg:pb-6 text-lg  text-gray-400">Contact me</div>
+        <div class="text-3xl px-2 lg:px-0 lg:text-4xl font-bold">Got a Project? Let's Talk</div>
         <div class="flex flex-row justify-center pt-6">
           <div class="">
             <svg class="transform scale-150" fill="purple" height="24" viewBox="0 0 24 24" width="24">
@@ -356,16 +408,16 @@
         </div>
         <div class="container mx-auto px-10">
 
-          <div class="flex w-full pt-16  pb-12 flex-row justify-between">
-            <div class="">
-              <img alt="Logo" class="rounded-full" height="50" src="/promise-as-logo.jpg" width="50">
+          <div class="hidden lg:flex w-full pt-16  pb-12 flex-row justify-between">
+            <div class="max-h-32">
+              <img alt="Logo" class="rounded-full h-16 lg:h-24 w-16 lg:w-24" src="/promise-as-logo.jpg">
             </div>
             <div class="my-auto ml-auto">
               <ul class="flex flex-row my-auto">
-                <li><a class="pr-8" href="#">About</a></li>
-                <li><a class="pr-8" href="#">Work</a></li>
-                <li><a class="pr-8" href="#">Service</a></li>
-                <li><a class="pr-8" href="#">Contact</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#">About</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#">Work</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#">Service</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -375,10 +427,10 @@
     </div>
   </section>
   <section class="container mx-auto px-4 py-4  lg:px-16">
-<div class="flex flex-row justify-between">
-  <div class="text-black text-opacity-50">&copy;&ensp; {{new Date().getFullYear()}} Promise Atokple</div>
-  <div class="text-black text-opacity-50">Thank you</div>
-</div>
+    <div class="flex flex-row justify-center lg:justify-between">
+      <div class="text-black text-opacity-50">&copy;&ensp; {{ new Date().getFullYear() }} Promise Atokple</div>
+      <div class="text-black hidden lg:block text-opacity-50">Thank you</div>
+    </div>
   </section>
 </template>
 
@@ -399,8 +451,8 @@ export default {
         },
         {name: 'Task Manager', image: 'url(/images/projects/project-sample-3.png)'},],
       profile: {
-        intro: "Hi, I'm Promise a freelance web designer/developer from Ghana. I help\n" +
-            "          brands turn their ideas into high quality products",
+        intro: "Hi, I'm Promise. A  web designer/developer from Ghana. I help\n" +
+            "brands turn their ideas into high quality products",
         first: "",
         second: ""
       },
@@ -408,8 +460,8 @@ export default {
         {
           title: 'Digital Marketing',
           tagline: 'Understand First',
-          color: 'bg-pink-100',
-          fill: 'pink',
+          color: 'bg-red-200',
+          fill: 'red',
           desc: " the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.",
           logo: 'M12,8H4A2,2 0 0,0 2,10V14A2,2 0 0,0 4,16H5V20A1,1 0 0,0 6,21H8A1,1 0 0,0 9,20V16H12L17,20V4L12,8M21.5,12C21.5,13.71 20.54,15.26 19,16V8C20.53,8.75 21.5,10.3 21.5,12Z',
         },
@@ -451,8 +503,13 @@ export default {
       }],
       companies: ['Universal Technologies', 'Scynett Ghana', 'Koforidua Technical University', '3DGhana'],
       colors: ['red', 'blue', 'indigo', 'orange',],
+
+
     }
   },
   components: {Expertise, Project},
+  computed: {
+    developerImage: 'url(/images/developer.svg)'
+  }
 };
 </script>

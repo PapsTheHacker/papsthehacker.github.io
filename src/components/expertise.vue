@@ -1,6 +1,6 @@
 <template>
-  <section class="p-6 bg-white shadow-sm overflow-hidden overflow-ellipsis rounded-lg max-h-64 h-64">
-    <div class="flex pb-6  flex-row">
+  <section class="p-6 bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
+    <div class="flex pb-4  flex-row">
       <div
           class="
               mr-4
@@ -31,6 +31,7 @@
         {{ expertise.desc }}
       </p>
     </div>
+    <div class="h-2 absolute bottom-0 left-0 w-full bg-white">a</div>
   </section>
 </template>
 

@@ -9,6 +9,7 @@
     "tailwind": "npx tailwindcss build -i src/assets/style.css -o .tailwind/tailwind.css"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
@@ -31,5 +32,5 @@
     "eslint-plugin-vue": "^7.0.0"
   },
   "_id": "portfolio@0.1.0",
-  "readme": "ERROR: No README data found!"
+  "readme": "README.md"
 }

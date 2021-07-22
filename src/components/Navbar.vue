@@ -1,24 +1,24 @@
 <template>
   <div class="flex justify-between" data-aos="zoom-in">
     <div class="max-h-12">
-      <img alt="Logo" class="rounded-full h-12 w-12"  src="/promise-as-logo.jpg">
+      <img alt="Logo" class="rounded-full h-12 w-12" src="/promise-as-logo.jpg">
     </div>
     <div class="flex pt-3 ">
       <ul class="flex-row hidden md:flex">
         <li class="pr-8">
-          <router-link active-class="font-bold border-b text-indigo-900 border-indigo-900" class="" to="/">Home
+          <router-link active-class="font-bold border-b text-indigo-900 border-indigo-900" class="link" to="/">Home
           </router-link>
         </li>
         <li class="pr-8 ">
-          <router-link  class="" to="#about">About
+          <router-link class="" to="#about">About
           </router-link>
         </li>
         <li class="pr-8">
-          <router-link  to="#services">Services
+          <router-link to="#services">Services
           </router-link>
         </li>
         <li class="pr-8">
-          <router-link  to="#blogs">Blog
+          <router-link to="#blogs">Blog
           </router-link>
         </li>
         <li class="">
@@ -30,7 +30,8 @@
     </div>
     <ul class="lg:flex pt-2 hidden ">
       <li class="pr-8">
-        <a :href="social.facebook" class="h-full transition duration-500 ease-in-out transform hover:scale-150" target="_blank" title="Facebook">
+        <a :href="social.facebook" class="h-full transition duration-500 ease-in-out transform hover:scale-150"
+           target="_blank" title="Facebook">
           <i class="hover:bg-purple-700">
             <svg class="" height="24" viewBox="0 0 24 24" width="24">
               <path
@@ -70,11 +71,14 @@
         </a>
       </li>
     </ul>
-    <ul class="my-auto cursor-pointer bg-gray-300 md:bg-white rounded-xl px-3 lg:hidden py-3">
+    <ul class="my-auto cursor-pointer bg-gray-300 md:bg-white rounded-xl px-3 lg:hidden py-3" @click="openNav">
       <li class="">
-        <svg width="24" height="24" class="" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+        <svg class="" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+        </svg>
       </li>
     </ul>
+
   </div>
 </template>
 
@@ -91,6 +95,12 @@ export default {
         github: 'https://github.com/promise-a',
       }
     }
+  },
+
+  methods: {
+    openNav() {
+      console.log('open navigation menu')
+    },
   }
 }
 </script>
@@ -98,5 +108,11 @@ export default {
 <style scoped>
 li {
   list-style: none;
+}
+
+.link:hover, .link:focus {
+  transform: scale(1.4);
+  transition: transform;
+  background: red;
 }
 </style>
