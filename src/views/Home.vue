@@ -1,11 +1,11 @@
 <template>
-  <section class="container mx-auto px-4 pt-12 md:pt-0 lg:px-16">
+  <section class="container mx-auto px-4 pt-12 md:pt-0 lg:px-16 xl:px-32 2xl:px-64">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col">
-        <div class="lg:pt-24 space-x-3 md:max-w-md" data-aos="zoom-in" data-aos-easing="ease-in-out">
-          <h1 class="text-4xl lg:text-8xl text-left font-bold">
+        <div class="lg:pt-14 space-x-3 md:max-w-md" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+          <h1 class="text-4xl lg:text-8xl text-left  font-bold">
             Hey, I'm a
-            <span class="text-black animate__animated animate__rubberBand animate__delay-2s an">software</span>
+            <div class="text-black typing">software</div>
             developer<span
               class="rounded-full"
           >.</span
@@ -19,9 +19,10 @@
           <input
               id=""
               class="
-              py-4
+              lg:py-4
               bg-white
-              px-4
+              px-2
+              lg:px-4
               w-full
               border border-transparent
               focus:outline-none
@@ -35,7 +36,8 @@
           />
           <button
               class="
-              py-4
+              lg:py-4
+              py-2
               px-8
               text-white
               bg-purple-600
@@ -63,15 +65,16 @@
             bg-pink-300
             h-auto
             ml-auto
-            py-12
+            py-12 my-auto
+            max-h-96
             md:w-3/4
             overflow-hidden
             rounded-tl-full rounded-bl-full rounded-br-full
           "
         >
           <img
-              alt="Promise Hero"
-              class="lg:h-96 h-56 w-full bg-cover object-contain transform scale-150"
+              alt="Promise Hero" id="image"
+              class=" w-full bg-cover  object-contain transform scale-150"
               src="/promise-as-hero.png"
               width="100%"
           />
@@ -84,17 +87,17 @@
       >
         My Skills
       </div>
-      <div class="text-5xl md:pb-10 text-center font-bold">My Expertise</div>
+      <div id="my-experience" class="text-5xl md:pb-10 text-center font-bold">My Expertise</div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-5" data-aos="fade-up" data-aos-easing="ease-in-out">
       <div v-for="expertise in expertises" :key="expertise.title" class="">
-        <expertise :expertise="expertise"></expertise>
+        <expertise :expertise="expertise" class="max-w-lg"></expertise>
       </div>
     </div>
   </section>
 
-  <div class="pb-12 lg:pb-16 mt-16 container mx-auto px-4 lg:px-16">
+  <div id="portfolio" class="pb-12 lg:pb-16 mt-16 container  mx-auto px-4 lg:px-16 xl:px-24 2xl:px-32">
     <div class="text-left  text-gray-400 font-bold tracking-widest">
       PORTFOLIO
     </div>
@@ -103,12 +106,12 @@
       <div class="text-left lg:text-right font-medium pt-4 lg:pt-4 ">
         <span class="bg-pink-500 p-2 text-sm text-white rounded-md">New</span>
         Discover all projects on
-        <router-link
+        <a
             class="text-pink-500"
             target="_blank"
-            to="https://dribbble.com"
+            href="https://dribbble.com/papsthehacker"
         >Dribbble &rightarrow;
-        </router-link
+        </a
         >
       </div>
     </div>
@@ -122,13 +125,14 @@
 
   <section>
     <div class="container -mt-64 mx-auto px-4 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div v-for="project in projects" :key="project.name">
+      <div class="" data-aos="fade-right" data-aos-easing="ease-in-out" v-for="project in projects" :key="project.name">
         <project :project="project"></project>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="about">
+
     <div class="relative  mt-16">
       <!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
       <div class="w-full z-20">
@@ -138,46 +142,62 @@
           >
             Nice to meet you.
           </div>
-          <div class="py-5 text-left">
-            <p class="text-4xl lg:text-6xl font-bold max-w-xl">
-              Hey, I'm Promise, software developer and designer
-            </p>
-          </div>
-          <div class="text-left  flex justify-between">
-            <div class="flex flex-col">
-              <p class="pb-6 max-w-2xl ">
-                Hi, my name is Promise and I’m a fullstack web developer from
-                Ghana. I have over 2 years experience in building responsive SPAs and
-                shipping performant products. <br class="lg:hidden"> As a web developer, I enjoy using my obsessive
-                attention to detail, my
-                unequivocal love for making things, and my mission-driven work ethic to literally change the world.
-              </p>
 
-              <p class="hidden lg:block max-w-2xl">
-                I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional
-                path has taken many twists and turns, I've never stopped
-                engaging my passion to help others and solve problems.
-              </p>
+          <div class="flex justify-between">
+            <div class="">
+              <div class="py-5 text-left">
+                <p class="text-4xl lg:text-6xl font-bold max-w-xl">
+                  Hey, I'm Promise, software developer and designer
+                </p>
+              </div>
+              <!--          region todo about me -->
+              <div class="text-left  flex justify-between">
+                <div class="flex flex-col">
+                  <p class="pb-6 max-w-2xl ">
+                    Hi, my name is Promise and I’m a fullstack web developer from
+                    Ghana. I have over 2 years experience in building responsive SPAs and
+                    shipping performant products. <br class="lg:hidden"> As a web developer, I enjoy using my obsessive
+                    attention to detail, my
+                    unequivocal love for making things, and my mission-driven work ethic to literally change the world.
+                  </p>
+
+                  <p class="hidden lg:block max-w-2xl">
+                    I’ve always sought out opportunities and challenges that are meaningful to me. Although my
+                    professional
+                    path has taken many twists and turns, I've never stopped
+                    engaging my passion to help others and solve problems.
+                  </p>
+                </div>
+                <!--            <div :style="{backgroundImage: developerImage}" class="">
+
+                            </div>-->
+
+              </div>
+              <!--          endregion-->
+              <div class="my-4 flex flex-row">
+                <img
+                    alt="Author's Image"
+                    class="rounded-full max-h-12 ring-2 ring-pink-500 p-1 h-12 w-12"
+                    src="/promise-as-logo.jpg"
+                />
+                <div class="flex flex-col pl-5 text-left">
+                  <p class="font-bold">Promise Atokple</p>
+                  <p class="text-sm text-opacity-50 text-gray-800">
+                    Fullstack Software Developer
+                  </p>
+                </div>
+              </div>
             </div>
-<!--            <div :style="{backgroundImage: developerImage}" class="">
-
-            </div>-->
-
-          </div>
-          <div class="my-4 flex flex-row">
-            <img
-                alt="Author's Image"
-                class="rounded-full max-h-12 ring-2 ring-pink-500 p-1 h-12 w-12"
-                src="/promise-as-logo.jpg"
-            />
-            <div class="flex flex-col pl-5 text-left">
-              <p class="font-bold">Promise Atokple</p>
-              <p class="text-sm text-opacity-50 text-gray-800">
-                Fullstack Software Developer
-              </p>
+            <div class="hidden lg:block">
+              <div class="">
+                <img src="/images/coding.svg" alt="coding image">
+              </div>
             </div>
           </div>
 
+          <div class="text-center lg:text-right">
+            <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
+          </div>
           <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             <div
                 class="
@@ -324,7 +344,7 @@
       </div>
     </div>
   </section>
-  <section class="relative pt-16 lg:pt-32 lg:pt-44">
+  <section class="relative pt-16 lg:pt-32 lg:pt-44 " data-aos="">
     <div class="container mx-auto px-4 lg:px-16">
       <div class="flex flex-col justify-center text-center">
         <div class="uppercase text-gray-400">Companies</div>
@@ -357,6 +377,12 @@
         <div>
           <div class="text-start text-gray-500">BLOG</div>
           <div class="text-4xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
+          <div class="">
+            <button
+                class="ring-2 p-2 text-2xl mt-3 hover:bg-blue-500 hover:text-white transition duration-500 rounded-lg">
+              Get in touch &longrightarrow;
+            </button>
+          </div>
         </div>
         <div>
           <ul v-for="blog in blogs" :key="blog.title">
@@ -414,7 +440,7 @@
             </div>
             <div class="my-auto ml-auto">
               <ul class="flex flex-row my-auto">
-                <li><a class="pr-4 lg:pr-8" href="#">About</a></li>
+                <li><a class="pr-4 lg:pr-8 " href="#">About</a></li>
                 <li><a class="pr-4 lg:pr-8" href="#">Work</a></li>
                 <li><a class="pr-4 lg:pr-8" href="#">Service</a></li>
                 <li><a class="pr-4 lg:pr-8" href="#">Contact</a></li>
@@ -510,6 +536,72 @@ export default {
   components: {Expertise, Project},
   computed: {
     developerImage: 'url(/images/developer.svg)'
+  },
+  methods: {
+    inView(element, classes) {
+      let el = document.querySelector(element)
+      let observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          if (classes.length) {
+            classes.forEach(cls => {
+              entry.target.classList.toggle(cls)
+            })
+          }
+          // entry.target.classList.toggle(...classes)
+          console.log('entered: ', entry.isIntersecting, 'classes:', entry.target.classList.toString())
+
+        } else {
+          // entry.target.classList.remove(...classes)
+          // console.log('removed: ', entry.isIntersecting, 'classes:', entry.target.classList.toString())
+
+        }
+
+      }, {})
+      observer.observe(el)
+    },
+  },
+  mounted() {
+    this.inView(
+        '#portfolio',
+        ['animate__animated', 'animate__backInUp',]
+    )
+    this.inView(
+        '#image',
+        ['animate__animated', 'animate__slideInRight',]
+    )
+    this.inView(
+        '#my-experience',
+        ['animate__animated', 'animate__rubberBand',]
+    )
   }
 };
 </script>
+
+<style>
+.typing {
+  width: 100%;
+  display: block;
+  animation: typing 2s steps(22), blink .5s step-end  alternate;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+
+@keyframes typing {
+  from {
+    border-right: 3px solid;
+    width: 0
+  }
+  to {
+    border-right: 0 solid;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+</style>

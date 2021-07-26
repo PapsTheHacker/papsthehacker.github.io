@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper" class="bg-gray-200 box-border  font-sans">
     <div class="w-full">
-      <div id="" class="md:container  md:relative bg-white md:bg-transparent px-4 lg:px-16 md:mx-auto py-6 lg:py-12">
+      <div id="" class="md:container  md:relative bg-white md:bg-transparent px-4 lg:px-16 xl:px-32 2xl:px-64 md:mx-auto py-6 lg:py-12">
         <Navbar></Navbar>
       </div>
       <router-view/>
@@ -21,7 +21,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #130f49;
+  scroll-behavior: smooth;
 
+}
+*, div, body {
+  scroll-behavior: smooth!important;
 }
 
 </style>

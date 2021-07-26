@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
+  <section class="p-6 transition duration-500 hover:bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
     <div class="flex pb-4  flex-row">
       <div
           class="
@@ -31,7 +31,7 @@
         {{ expertise.desc }}
       </p>
     </div>
-    <div class="h-2 absolute bottom-0 left-0 w-full bg-white">a</div>
+    <div class="h-2 absolute bottom-0 left-0 w-full hover:bg-white"></div>
   </section>
 </template>
 
