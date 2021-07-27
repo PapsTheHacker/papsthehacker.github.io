@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 transition duration-500 hover:bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
+  <section class="p-6 transition duration-500 bg-white md:bg-transparent hover:bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
     <div class="flex pb-4  flex-row">
       <div
           class="
@@ -28,10 +28,9 @@
     <div class="text-left  overflow-ellipsis">
       <p class="mb-4 overflow-ellipsis text-sm lg:text-base">
         <span class="font-bold">{{ expertise.tagline }}</span>
-        {{ expertise.desc }}
+        {{ expertise.desc }} <span class="hidden md:block">{{expertise.extra !== null ? expertise.extra: ''}}</span>
       </p>
     </div>
-    <div class="h-2 absolute bottom-0 left-0 w-full hover:bg-white"></div>
   </section>
 </template>
 

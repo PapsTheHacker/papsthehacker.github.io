@@ -1,8 +1,24 @@
 @import "~animate.css";
 @import "~aos/dist/aos.css";
-@import "~tailwindcss/tailwind.css";
 
-/*@tailwind base;*/
-/*@tailwind components;*/
-/*@tailwind utilities;*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paps-container {
+    @apply md:container mx-auto px-4  lg:px-16 xl:px-32 2xl:px-64;
+}
+
+.tech-stack {
+    @apply h-40 md:h-56
+    flex flex-col
+    justify-center
+    my-auto
+    align-middle
+    bg-white
+    rounded-xl
+    transition duration-500 border-2 cursor-pointer hover:border-purple-600;
+}
+
+
 

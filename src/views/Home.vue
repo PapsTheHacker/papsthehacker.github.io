@@ -1,8 +1,8 @@
 <template>
-  <section class="container mx-auto px-4 pt-12 md:pt-0 lg:px-16 xl:px-32 2xl:px-64">
+  <section class="paps-container pt-6 md:pt-0 ">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col">
-        <div class="lg:pt-14 space-x-3 md:max-w-md" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+        <div class="lg:pt-14 w-full " data-aos="zoom-in" data-aos-easing="ease-out-cubic">
           <h1 class="text-4xl lg:text-8xl text-left  font-bold">
             Hey, I'm a
             <div class="text-black typing">software</div>
@@ -26,7 +26,7 @@
               w-full
               border border-transparent
               focus:outline-none
-              focus:ring-2 focus:ring-purple-600
+              focus:ring-2 focus:ring-blue-600
               focus:border-transparent
               rounded-lg
             "
@@ -40,8 +40,8 @@
               py-2
               px-8
               text-white
-              bg-purple-600
-              hover:bg-purple-700
+              bg-blue-600
+              hover:bg-blue-700
               focus:outline-none
               focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50
               bg-indigo-500
@@ -58,23 +58,24 @@
         </div>
       </div>
 
-      <div class="overflow-hidden justify-end">
-        <div
+      <div class="overflow-hidden hidden md:block justify-end">
+        <div style="max-height: 28rem"
             class="
             text-right
-            bg-pink-300
+            bg-blue-300
             h-auto
+            md:mt-16
             ml-auto
-            py-12 my-auto
-            max-h-96
+             my-auto
+
             md:w-3/4
             overflow-hidden
             rounded-tl-full rounded-bl-full rounded-br-full
           "
         >
           <img
-              alt="Promise Hero" id="image"
-              class=" w-full bg-cover  object-contain transform scale-150"
+              id="image" alt="Promise Hero"
+              class="w-full bg-cover h-full"
               src="/promise-as-hero.png"
               width="100%"
           />
@@ -90,63 +91,64 @@
       <div id="my-experience" class="text-5xl md:pb-10 text-center font-bold">My Expertise</div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2  gap-5" data-aos="fade-up" data-aos-easing="ease-in-out">
-      <div v-for="expertise in expertises" :key="expertise.title" class="">
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-5">
+      <div v-for="expertise in expertises" :key="expertise.title" class="" data-aos="fade-up"
+           data-aos-easing="ease-in-out">
         <expertise :expertise="expertise" class="max-w-lg"></expertise>
       </div>
     </div>
   </section>
 
-  <div id="portfolio" class="pb-12 lg:pb-16 mt-16 container  mx-auto px-4 lg:px-16 xl:px-24 2xl:px-32">
-    <div class="text-left  text-gray-400 font-bold tracking-widest">
-      PORTFOLIO
-    </div>
-    <div class="flex flex-col lg:flex-row  justify-between">
-      <div class="text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
-      <div class="text-left lg:text-right font-medium pt-4 lg:pt-4 ">
-        <span class="bg-pink-500 p-2 text-sm text-white rounded-md">New</span>
-        Discover all projects on
-        <a
-            class="text-pink-500"
-            target="_blank"
-            href="https://dribbble.com/papsthehacker"
-        >Dribbble &rightarrow;
-        </a
-        >
+  <section id="portfolio" class="">
+    <div class="pb-12 lg:pb-16 mt-16 paps-container">
+      <div class="text-left  text-gray-400 font-bold tracking-widest">
+        PORTFOLIO
       </div>
+      <div class="flex flex-col lg:flex-row  justify-between">
+        <div class="text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
+        <div class="text-left lg:text-right font-medium pt-4 lg:pt-4 ">
+          <span class="bg-pink-500 p-2 text-sm text-white rounded-md">New</span>
+          Discover all projects on
+          <a
+              class="text-pink-500"
+              href="https://dribbble.com/papsthehacker"
+              target="_blank"
+          >Dribbble &rightarrow;
+          </a
+          >
+        </div>
+      </div>
+
+    </div>
+    <div class="-mt-48">
+      <div
+          class="h-96 bg-red-100 w-3/4 ml-auto my-4 rounded-tl-3xl rounded-bl-3xl"
+      ></div>
     </div>
 
-  </div>
-  <div class="-mt-48">
-    <div
-        class="h-96 bg-red-100 w-3/4 ml-auto my-4 rounded-tl-3xl rounded-bl-3xl"
-    ></div>
-  </div>
-
-  <section>
-    <div class="container -mt-64 mx-auto px-4 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="" data-aos="fade-right" data-aos-easing="ease-in-out" v-for="project in projects" :key="project.name">
+    <div class="paps-container -mt-64 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-for="project in projects" :key="project.name" class="" data-aos="fade-right" data-aos-easing="ease-in-out">
         <project :project="project"></project>
       </div>
     </div>
-  </section>
 
-  <section id="about">
+  </section>
+  <section id="about" class="overflow-hidden">
 
     <div class="relative  mt-16">
       <!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
       <div class="w-full z-20">
-        <div class="container pt-16 px-4 lg:px-16 mx-auto">
+        <div class="paps-container pt-16 ">
           <div
               class="text-left uppercase text-gray-400 tracking-widest font-bold"
           >
             Nice to meet you.
           </div>
 
-          <div class="flex justify-between">
-            <div class="">
+          <div class="flex justify-between" data-aos="fade-up" data-aos-easing="ease-out-cubic">
+            <div class="flex-auto">
               <div class="py-5 text-left">
-                <p class="text-4xl lg:text-6xl font-bold max-w-xl">
+                <p class="text-4xl lg:text-6xl font-bold ">
                   Hey, I'm Promise, software developer and designer
                 </p>
               </div>
@@ -185,12 +187,19 @@
                   <p class="text-sm text-opacity-50 text-gray-800">
                     Fullstack Software Developer
                   </p>
+                  <a class="flex" target="_blank" href="/resume.pdf">
+                    <svg height="24" viewBox="0 0 24 24" width="24" fill-opacity=".5">
+                      <path
+                          d="M8,13H10.55V10H13.45V13H16L12,17L8,13M19.35,10.04C21.95,10.22 24,12.36 24,15A5,5 0 0,1 19,20H6A6,6 0 0,1 0,14C0,10.91 2.34,8.36 5.35,8.04C6.6,5.64 9.11,4 12,4C15.64,4 18.67,6.59 19.35,10.04M19,18A3,3 0 0,0 22,15C22,13.45 20.78,12.14 19.22,12.04L17.69,11.93L17.39,10.43C16.88,7.86 14.62,6 12,6C9.94,6 8.08,7.14 7.13,8.97L6.63,9.92L5.56,10.03C3.53,10.24 2,11.95 2,14A4,4 0 0,0 6,18H19Z"/>
+                    </svg>
+                    <span class="ml-2">Download my CV</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="hidden lg:block">
+            <div class="hidden  lg:block">
               <div class="">
-                <img src="/images/coding.svg" alt="coding image">
+                <img alt="coding image" src="/images/coding.svg">
               </div>
             </div>
           </div>
@@ -199,18 +208,7 @@
             <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
           </div>
           <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div
-                class="
-                h-40 md:h-56
-                flex flex-col
-                justify-center
-                my-auto
-                align-middle
-                bg-white 
-                rounded-xl
-                transition duration-500 border-2 cursor-pointer hover:border-purple-600
-              "
-            >
+            <div class="tech-stack">
 
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#F83F37" height="50" viewBox="0 0 24 24" width="50">
@@ -220,18 +218,7 @@
               </i>
               <div class="mx-auto pt-3">Laravel</div>
             </div>
-            <div
-                class="
-                h-40 md:h-56
-                flex flex-col
-                justify-center
-                my-auto
-                align-middle
-                bg-white
-                rounded-xl
-                transition duration-500 border-2 cursor-pointer hover:border-purple-600
-              "
-            >
+            <div class="tech-stack">
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#689F63" height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -241,18 +228,7 @@
               <div class="mx-auto pt-3">Node.js</div>
             </div>
 
-            <div
-                class="
-                h-40 md:h-56 min-w-32
-                flex flex-col
-                justify-center
-                my-auto
-                align-middle
-                bg-white
-                rounded-xl
-                transition duration-500 border-2 cursor-pointer hover:border-purple-600
-              "
-            >
+            <div class="tech-stack">
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#FA6E39" height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -261,18 +237,7 @@
               </i>
               <div class="mx-auto pt-3">GitLab CI</div>
             </div>
-            <div
-                class="
-                h-40 md:h-56
-                flex flex-col
-                justify-center
-                my-auto
-                align-middle
-                bg-white
-                rounded-xl
-                transition duration-500 border-2 cursor-pointer hover:border-purple-600
-              "
-            >
+            <div class="tech-stack">
               <i class="text-center mx-auto transform scale-150">
                 <svg height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -283,7 +248,8 @@
             </div>
           </div>
 
-          <ul class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-5">
+          <ul class="md:grid grid-cols-3 hidden overflow-hidden md:grid-cols-6 lg:grid-cols-10 gap-5"
+              data-aos="fade-left">
 
             <li class="bg-white mx-auto rounded-xl p-2">
               <svg :fill="colors[Math.floor(Math.random()*colors.length)]" height="24" viewBox="0 0 24 24" width="24">
@@ -344,49 +310,29 @@
       </div>
     </div>
   </section>
-  <section class="relative pt-16 lg:pt-32 lg:pt-44 " data-aos="">
-    <div class="container mx-auto px-4 lg:px-16">
-      <div class="flex flex-col justify-center text-center">
-        <div class="uppercase text-gray-400">Companies</div>
-        <div class="font-bold pt-1 pb-8 lg:pb-16 text-5xl">Customers & Clients</div>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-        <div v-for="company in companies" :key="company"
-             class="hover:bg-white bg-blue-50 p-1 text-gray-500 transition duration-500 border-2 hover:border-purple-600 h-44 rounded-xl text-center font-medium text-xl flex flex-col justify-center">
-          {{ company }}
-        </div>
-        <div
-            class="hover:bg-white transition duration-500 border-2  hidden hover:border-purple-600 lg:flex flex-col flex-nowrap p-1   h-44 rounded-xl text-center font-medium text-xl my-auto  justify-center">
-          <div aria-disabled="true" class="flex flex-row justify-center select-none">
-            <span>See all companies</span>
-            <i class="transform my-auto scale-75">
-              <svg height="24" viewBox="0 0 24 24" width="24">
-                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
-              </svg>
-            </i>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pt-16 lg:pt-32">
-    <div class="container px-4 lg:px-16 mx-auto">
+  <section id="blogs" class="pt-16 lg:pt-32">
+    <div class="paps-container">
       <div class="grid grid-cols-1 md:grid-cols-2">
-        <div>
-          <div class="text-start text-gray-500">BLOG</div>
+        <div class="mb-6">
+          <div class="text-start text-gray-500">
+            <svg height="24" viewBox="0 0 24 24" width="24">
+              <path
+                  d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"/>
+            </svg>
+          </div>
           <div class="text-4xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
           <div class="">
             <button
-                class="ring-2 p-2 text-2xl mt-3 hover:bg-blue-500 hover:text-white transition duration-500 rounded-lg">
-              Get in touch &longrightarrow;
+                class="ring-2 hidden md:block p-2 text-2xl mt-3 hover:bg-blue-500 hover:text-white transition duration-500 rounded-lg">
+              Find out more &longrightarrow;
             </button>
           </div>
         </div>
         <div>
-          <ul v-for="blog in blogs" :key="blog.title">
-            <li class="hover:bg-white my-6 cursor-pointer rounded-lg py-6 px-6">
+          <ul v-for="blog in blogs" :key="blog.title" class="overflow-hidden">
+            <li class="hover:bg-white md:bg-transparent bg-white my-2 lg:my-6 cursor-pointer rounded-lg py-6 px-6 "
+                data-aos="slide-left">
               <a class="flex flex-col" href="#">
                 <div class="text-gray-400 flex pb-2 lg:pb-6 flex-row">
                   <svg fill-opacity=".2" height="24" viewBox="0 0 24 24" width="24">
@@ -416,7 +362,8 @@
     </div>
   </section>
 
-  <section class="container mt-12 relative overflow-hidden px-0 lg:px-16 mx-auto">
+  <section id="contact" class="paps-container mt-12 relative overflow-hidden" data-aos="zoom-in"
+           data-aos-easing="ease-in-out">
     <div class="lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
       <div class="text-center pt-8 lg:pt-16">
         <div class="uppercase pb-2 lg:pb-6 text-lg  text-gray-400">Contact me</div>
@@ -435,15 +382,15 @@
         <div class="container mx-auto px-10">
 
           <div class="hidden lg:flex w-full pt-16  pb-12 flex-row justify-between">
-            <div class="max-h-32">
-              <img alt="Logo" class="rounded-full h-16 lg:h-24 w-16 lg:w-24" src="/promise-as-logo.jpg">
+            <div class="max-h-20">
+              <img alt="Logo" class="rounded-full h-12 lg:h-20 w-12 lg:w-20" src="/promise-as-logo.jpg">
             </div>
             <div class="my-auto ml-auto">
               <ul class="flex flex-row my-auto">
-                <li><a class="pr-4 lg:pr-8 " href="#">About</a></li>
-                <li><a class="pr-4 lg:pr-8" href="#">Work</a></li>
-                <li><a class="pr-4 lg:pr-8" href="#">Service</a></li>
-                <li><a class="pr-4 lg:pr-8" href="#">Contact</a></li>
+                <li><a class="pr-4 lg:pr-8 " href="#about">About</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#portfolio">Work</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#services">Service</a></li>
+                <li><a class="pr-4 lg:pr-8" href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -452,7 +399,7 @@
       </div>
     </div>
   </section>
-  <section class="container mx-auto px-4 py-4  lg:px-16">
+  <section class="paps-container py-4">
     <div class="flex flex-row justify-center lg:justify-between">
       <div class="text-black text-opacity-50">&copy;&ensp; {{ new Date().getFullYear() }} Promise Atokple</div>
       <div class="text-black hidden lg:block text-opacity-50">Thank you</div>
@@ -496,7 +443,8 @@ export default {
           tagline: 'Position the Brand',
           color: 'bg-blue-100',
           fill: 'blue',
-          desc: "to shape your audiences’ (customers, clients, employees, etc.) perceptions. It is a process and strategy that encompasses the steps you take to give meaning to your product and organization. Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers.",
+          extra: 'Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers.',
+          desc: "to shape your audiences’ (customers, clients, employees, etc.) perceptions. It is a process and strategy that encompasses the steps you take to give meaning to your product and organization.",
           logo: 'M15,14L21,17V7L15,10V14M9,14L3,17V7L9,10V14M10,10H14V14H10V10Z',
         },
         {
@@ -581,7 +529,7 @@ export default {
 .typing {
   width: 100%;
   display: block;
-  animation: typing 2s steps(22), blink .5s step-end  alternate;
+  animation: typing 2s steps(22), blink .5s step-end alternate;
   white-space: nowrap;
   overflow: hidden;
 

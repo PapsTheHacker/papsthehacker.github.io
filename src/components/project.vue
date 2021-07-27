@@ -4,8 +4,9 @@
       <div
           :style="{backgroundImage: project.image}"
           class="
-            h-96
+            h-72
 bg-cover shadow-xl
+pa-10
             rounded-2xl
             relative
             overflow-hidden
@@ -13,16 +14,16 @@ bg-cover shadow-xl
       >
         <div
             class="
-              bg-blue-400
+              bg-blue-500
               h-full opacity-0
-              pa-10 hover:opacity-80
+              hover:opacity-90
               bg-transparent
-              flex flex-col
+              flex flex-col transition duration-500
               justify-center
               ease-in-out bg-cover
               overflow-hidden
               rounded-2xl
-              w-full
+
             "
 
         >

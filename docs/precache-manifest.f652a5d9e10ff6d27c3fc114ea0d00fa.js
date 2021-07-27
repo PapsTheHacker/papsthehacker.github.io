@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "653853d60d301ef80a4b",
-    "url": "/css/app.8d98f022.css"
+    "revision": "1990b506ee3a4878585e",
+    "url": "/css/app.e0cc765a.css"
   },
   {
-    "revision": "3fc945cd65bae0c57846",
-    "url": "/css/chunk-vendors.83f569f6.css"
+    "revision": "03e7fdb32ea0e95f6b72",
+    "url": "/css/chunk-vendors.70853c21.css"
   },
   {
     "revision": "859858d2109d53a006c1ffdd22b6550e",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "57bf780e061c230a09cc73b8d76c4700",
     "url": "/images/brands/youtube.svg"
+  },
+  {
+    "revision": "c6255e41939de56e7e0af88fd6b5f431",
+    "url": "/images/coding.svg"
   },
   {
     "revision": "830277865be0d305f160aa8cb952fc15",
@@ -52,24 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/images/projects/project-sample-6.png"
   },
   {
-    "revision": "181fab571482379c9b6fe2898f366d9b",
+    "revision": "51c2dc7d8a07497ebeeb64f04106751f",
     "url": "/index.html"
   },
   {
-    "revision": "1109e9490ff6c23e3aa1",
-    "url": "/js/about.b2adc6fe.js"
+    "revision": "1990b506ee3a4878585e",
+    "url": "/js/app.9b93b557.js"
   },
   {
-    "revision": "653853d60d301ef80a4b",
-    "url": "/js/app.3fdb1cf3.js"
+    "revision": "03e7fdb32ea0e95f6b72",
+    "url": "/js/chunk-vendors.b7d19e31.js"
   },
   {
-    "revision": "3fc945cd65bae0c57846",
-    "url": "/js/chunk-vendors.bd40eda4.js"
-  },
-  {
-    "revision": "38c559f366d41acc5f74",
-    "url": "/js/services.1d396db6.js"
+    "revision": "e892cf520b280dda045b",
+    "url": "/js/services.9ea4efce.js"
   },
   {
     "revision": "1770c2524b653c4741436956a1f7f256",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "51fb2c41c6cf216679aa708c2ca40171",
     "url": "/promise-as-logo.jpg"
+  },
+  {
+    "revision": "d0de5b9d055b0a19dc23f2f96a62a01a",
+    "url": "/resume.pdf"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
