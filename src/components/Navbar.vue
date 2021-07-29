@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between" data-aos="zoom-in">
+  <div class="flex justify-between">
     <div class="max-h-12">
       <a href="/">
         <img alt="Logo" class="rounded-full h-8 w-8 lg:h-12 lg:w-12" src="/promise-as-logo.jpg">

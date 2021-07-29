@@ -2,7 +2,7 @@
   <section class="paps-container pt-6 md:pt-0 ">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col">
-        <div class="lg:pt-14 w-full " data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+        <div class="lg:pt-14 w-full " data-aos="zoom-in" data-aos-easing="ease-in-out">
           <h1 class="text-4xl lg:text-8xl text-left  font-bold">
             Hey, I'm a
             <span class="text-black">software</span>
@@ -176,7 +176,7 @@
 
               </div>
               <!--          endregion-->
-              <div class="my-4 flex flex-row" data-aos="zoom-in" data-aos-easing="ease-in-out">
+              <div class="my-4 flex flex-row">
                 <img
                     alt="Author's Image"
                     class="rounded-full max-h-12 ring-2 ring-pink-500 p-1 h-12 w-12"
@@ -207,7 +207,7 @@
           <div class="text-center lg:text-right" >
             <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
           </div>
-          <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" data-aos="zoom-out-up" data-aos-easing="ease-in-out">
+          <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="tech-stack border border-red-200 shadow-lg" >
 
               <i class="text-center mx-auto transform scale-150">
@@ -357,7 +357,7 @@
     </div>
   </section>
 
-  <section id="contact" class="paps-container mt-12 relative overflow-hidden" data-aos="zoom-in"
+  <section id="contact" class="paps-container mt-12 relative overflow-hidden" data-aos="fade-up"
            data-aos-easing="ease-in-out">
     <div class="rounded-t-lg lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
       <div class="text-center pt-8 lg:pt-16">
