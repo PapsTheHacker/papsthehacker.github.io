@@ -4,7 +4,7 @@
       <div
           :style="{backgroundImage: project.image}"
           class="
-            h-72
+            md:h-72 h-60
 bg-cover shadow-xl
 pa-10
             rounded-2xl
@@ -27,7 +27,7 @@ pa-10
             "
 
         >
-          <div class="text-2xl text-white text-center pb-4">{{ project.name }}</div>
+          <div class="text-xl md:text-2xl text-white text-center pb-4">{{ project.name }}</div>
           <button
               class="
                 ring-2

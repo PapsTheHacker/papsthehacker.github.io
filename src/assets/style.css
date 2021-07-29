@@ -10,14 +10,14 @@
 }
 
 .tech-stack {
-    @apply h-40 md:h-56
+    @apply h-28  max-w-md md:h-56 pt-1
     flex flex-col
     justify-center
     my-auto
     align-middle
     bg-white
     rounded-xl
-    transition duration-500 border-2 cursor-pointer hover:border-purple-600;
+    transition duration-500 border-2 cursor-pointer ;
 }
 
 

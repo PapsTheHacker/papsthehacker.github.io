@@ -82,13 +82,13 @@
         </div>
       </div>
     </div>
-    <div class="py-12">
+    <div class=" py-6 md:py-12">
       <div
-          class="text-center text-gray-400 uppercase tracking-widest font-bold"
+          class="text-center text-sm text-gray-300 uppercase tracking-widest font-bold"
       >
         My Skills
       </div>
-      <div id="my-experience" class="text-5xl md:pb-10 text-center font-bold">My Expertise</div>
+      <div id="my-experience" class="text-3xl md:text-5xl md:pb-10 text-center font-bold">My Expertise</div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2  gap-5">
@@ -101,16 +101,16 @@
 
   <section id="portfolio" class="">
     <div class="pb-12 lg:pb-16 mt-16 paps-container">
-      <div class="text-left  text-gray-400 font-bold tracking-widest">
+      <div class="text-left  text-gray-300 font-bold tracking-widest">
         PORTFOLIO
       </div>
       <div class="flex flex-col lg:flex-row  justify-between">
-        <div class="text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
-        <div class="text-left lg:text-right font-medium pt-4 lg:pt-4 ">
-          <span class="bg-pink-500 p-2 text-sm text-white rounded-md">New</span>
+        <div class="text-xl md:text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
+        <div class="text-left truncate text-xs lg:text-right md:text-sm font-medium pt-4 lg:pt-4 ">
+          <span class="bg-pink-500  mr-1 p-1 md:p-2  text-white rounded-md">New</span>
           Discover all projects on
           <a
-              class="text-pink-500"
+              class="text-pink-500 ml-1"
               href="https://dribbble.com/papsthehacker"
               target="_blank"
           >Dribbble &rightarrow;
@@ -126,8 +126,8 @@
       ></div>
     </div>
 
-    <div class="paps-container -mt-64 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div v-for="project in projects" :key="project.name" class="" data-aos="fade-right" data-aos-easing="ease-in-out">
+    <div class="overflow-hidden paps-container -mt-64 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-for="project in projects" :key="project.name" class="overflow-hidden" data-aos="fade-right" data-aos-easing="ease-in-out">
         <project :project="project"></project>
       </div>
     </div>
@@ -148,7 +148,7 @@
           <div class="flex justify-between" data-aos="fade-up" data-aos-easing="ease-out-cubic">
             <div class="flex-auto">
               <div class="py-5 text-left">
-                <p class="text-4xl lg:text-6xl font-bold ">
+                <p class="text-2xl  lg:text-6xl font-bold ">
                   Hey, I'm Promise, software developer and designer
                 </p>
               </div>
@@ -208,7 +208,7 @@
             <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
           </div>
           <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="tech-stack">
+            <div class="tech-stack border border-red-200 shadow-lg">
 
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#F83F37" height="50" viewBox="0 0 24 24" width="50">
@@ -218,7 +218,7 @@
               </i>
               <div class="mx-auto pt-3">Laravel</div>
             </div>
-            <div class="tech-stack">
+            <div class="tech-stack border border-green-200 shadow-lg">
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#689F63" height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -228,7 +228,7 @@
               <div class="mx-auto pt-3">Node.js</div>
             </div>
 
-            <div class="tech-stack">
+            <div class="tech-stack border border-red-200 shadow-lg">
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#FA6E39" height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -237,7 +237,7 @@
               </i>
               <div class="mx-auto pt-3">GitLab CI</div>
             </div>
-            <div class="tech-stack">
+            <div class="tech-stack border border-gray-400 shadow-lg">
               <i class="text-center mx-auto transform scale-150">
                 <svg height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -311,17 +311,17 @@
     </div>
   </section>
 
-  <section id="blogs" class="pt-16 lg:pt-32">
+  <section id="blogs" class="pt-4 lg:pt-32">
     <div class="paps-container">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="mb-6">
           <div class="text-start text-gray-500">
-            <svg height="24" viewBox="0 0 24 24" width="24">
+            <svg height="24" viewBox="0 0 24 24" width="24" opacity=".5">
               <path
                   d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"/>
             </svg>
           </div>
-          <div class="text-4xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
+          <div class="text-2xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
           <div class="">
             <button
                 class="ring-2 hidden md:block p-2 text-2xl mt-3 hover:bg-blue-500 hover:text-white transition duration-500 rounded-lg">
@@ -331,7 +331,7 @@
         </div>
         <div>
           <ul v-for="blog in blogs" :key="blog.title" class="overflow-hidden">
-            <li class="hover:bg-white md:bg-transparent bg-white my-2 lg:my-6 cursor-pointer rounded-lg py-6 px-6 "
+            <li class="hover:bg-white md:bg-transparent bg-white my-2 lg:my-6 cursor-pointer rounded-lg py-3 md:py-6 px-2 md:px-6 "
                 data-aos="slide-left">
               <a class="flex flex-col" href="#">
                 <div class="text-gray-400 flex pb-2 lg:pb-6 flex-row">
@@ -342,7 +342,7 @@
                   <div class="pl-2">July 6, 2021</div>
                 </div>
                 <div class="flex flex-row justify-between">
-                  <div class="text-xl lg:text-3xl pb-3 font-bold  tracking-wide">
+                  <div class="text-lg lg:text-3xl pb-3 font-bold leading-tight  tracking-wide">
                     {{ blog.title }}
                   </div>
                   <div class="my-auto">
@@ -367,7 +367,7 @@
     <div class="lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
       <div class="text-center pt-8 lg:pt-16">
         <div class="uppercase pb-2 lg:pb-6 text-lg  text-gray-400">Contact me</div>
-        <div class="text-3xl px-2 lg:px-0 lg:text-4xl font-bold">Got a Project? Let's Talk</div>
+        <div class="text-2xl px-2 lg:px-0 lg:text-4xl font-bold">Got a Project? Let's Talk</div>
         <div class="flex flex-row justify-center pt-6">
           <div class="">
             <svg class="transform scale-150" fill="purple" height="24" viewBox="0 0 24 24" width="24">
@@ -375,11 +375,11 @@
                   d="M2 6V20H20V22H2C.895 22 0 21.11 0 20V6H2M24 4C24 2.9 23.1 2 22 2H6C4.9 2 4 2.9 4 4V16C4 17.1 4.9 18 6 18H22C23.1 18 24 17.1 24 16V4M22 4L14 9L6 4H22M22 16H6V6L14 11L22 6V16Z"/>
             </svg>
           </div>
-          <div class="pl-6 text-xl text-gray-500">
+          <div class="pl-4 md:pl-6 text-md md:text-xl mb-6  text-gray-500">
             <a class="" href="mailto:promiseatokple@outlook.com">promiseatokple@outlook.com</a>
           </div>
         </div>
-        <div class="container mx-auto px-10">
+        <div class="container  mx-auto px-10">
 
           <div class="hidden lg:flex w-full pt-16  pb-12 flex-row justify-between">
             <div class="max-h-20">
@@ -443,7 +443,8 @@ export default {
           tagline: 'Position the Brand',
           color: 'bg-blue-100',
           fill: 'blue',
-          extra: 'Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers.',
+          extra: 'Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers' +
+              '.',
           desc: "to shape your audiences’ (customers, clients, employees, etc.) perceptions. It is a process and strategy that encompasses the steps you take to give meaning to your product and organization.",
           logo: 'M15,14L21,17V7L15,10V14M9,14L3,17V7L9,10V14M10,10H14V14H10V10Z',
         },

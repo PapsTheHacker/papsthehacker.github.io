@@ -1,15 +1,15 @@
 <template>
-  <section class="p-6 transition duration-500 bg-white md:bg-transparent hover:bg-white shadow-sm relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
+  <section class="p-4 md:p-6 transition duration-500 bg-white md:bg-transparent hover:bg-white  relative overflow-hidden  overflow-ellipsis rounded-lg max-h-64 h-64">
     <div class="flex pb-4  flex-row">
       <div
           class="
               mr-4
               md:mr-6
               rounded-lg
-              h-16
+              h-14 md:h-16
               flex
               justify-center
-              w-16
+             w-14 md:w-16
             " :class="expertise.color"
       >
         <i class="my-auto scale-150 transform">
@@ -21,11 +21,11 @@
         </i>
 
       </div>
-      <div class="font-bold pt-2 md:pt-0 text-xl text-left my-auto">
+      <div class="font-bold leading-tight  md:pt-0 text-lg md:text-xl text-left my-auto">
         {{ expertise.title }}
       </div>
     </div>
-    <div class="text-left  overflow-ellipsis">
+    <div class="text-left  overflow-clip">
       <p class="mb-4 overflow-ellipsis text-sm lg:text-base">
         <span class="font-bold">{{ expertise.tagline }}</span>
         {{ expertise.desc }} <span class="hidden md:block">{{expertise.extra !== null ? expertise.extra: ''}}</span>
