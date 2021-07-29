@@ -5,7 +5,7 @@
         <div class="lg:pt-14 w-full " data-aos="zoom-in" data-aos-easing="ease-out-cubic">
           <h1 class="text-4xl lg:text-8xl text-left  font-bold">
             Hey, I'm a
-            <div class="text-black typing">software</div>
+            <span class="text-black">software</span>
             developer<span
               class="rounded-full"
           >.</span
@@ -45,7 +45,7 @@
               focus:outline-none
               focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50
               bg-indigo-500
-              rounded-xl
+              rounded-lg
               -ml-5
             "
               type="submit"
@@ -91,7 +91,7 @@
       <div id="my-experience" class="text-3xl md:text-5xl md:pb-10 text-center font-bold">My Expertise</div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2  gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 mb-6 md:mb-0 gap-5">
       <div v-for="expertise in expertises" :key="expertise.title" class="" data-aos="fade-up"
            data-aos-easing="ease-in-out">
         <expertise :expertise="expertise" class="max-w-lg"></expertise>
@@ -99,14 +99,14 @@
     </div>
   </section>
 
-  <section id="portfolio" class="">
+  <section id="portfolio" class="bg-white pb-10 overflow-hidden">
     <div class="pb-12 lg:pb-16 mt-16 paps-container">
       <div class="text-left  text-gray-300 font-bold tracking-widest">
         PORTFOLIO
       </div>
       <div class="flex flex-col lg:flex-row  justify-between">
         <div class="text-xl md:text-3xl lg:pt-4 lg:text-5xl text-left font-bold">All Creative Works</div>
-        <div class="text-left truncate text-xs lg:text-right md:text-sm font-medium pt-4 lg:pt-4 ">
+        <div class="text-left truncate text-xs lg:text-right md:text-sm font-medium pt-2 pb-1 lg:pt-4 ">
           <span class="bg-pink-500  mr-1 p-1 md:p-2  text-white rounded-md">New</span>
           Discover all projects on
           <a
@@ -126,8 +126,8 @@
       ></div>
     </div>
 
-    <div class="overflow-hidden paps-container -mt-64 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div v-for="project in projects" :key="project.name" class="overflow-hidden" data-aos="fade-right" data-aos-easing="ease-in-out">
+    <div class="overflow-hidden paps-container  -mt-64 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-for="project in projects" :key="project.name" class="overflow-hidden md:pb-6" data-aos="fade-right" data-aos-easing="ease-in-out">
         <project :project="project"></project>
       </div>
     </div>
@@ -135,26 +135,26 @@
   </section>
   <section id="about" class="overflow-hidden">
 
-    <div class="relative  mt-16">
+    <div class="relative  md:mt-16">
       <!--      <div class="w-2/3 bg-pink-100 h-screen  z-auto rounded-r-3xl"></div>-->
       <div class="w-full z-20">
-        <div class="paps-container pt-16 ">
+        <div class="paps-container pt-10 md:pt-16 ">
           <div
-              class="text-left uppercase text-gray-400 tracking-widest font-bold"
+              class="text-left uppercase text-gray-400 opacity-70 tracking-widest font-bold"
           >
             Nice to meet you.
           </div>
 
           <div class="flex justify-between" data-aos="fade-up" data-aos-easing="ease-out-cubic">
             <div class="flex-auto">
-              <div class="py-5 text-left">
+              <div class="pb-1 md:pb-4 text-left">
                 <p class="text-2xl  lg:text-6xl font-bold ">
                   Hey, I'm Promise, software developer and designer
                 </p>
               </div>
               <!--          region todo about me -->
               <div class="text-left  flex justify-between">
-                <div class="flex flex-col">
+                <div class="flex opacity-70 flex-col">
                   <p class="pb-6 max-w-2xl ">
                     Hi, my name is Promise and I’m a fullstack web developer from
                     Ghana. I have over 2 years experience in building responsive SPAs and
@@ -176,7 +176,7 @@
 
               </div>
               <!--          endregion-->
-              <div class="my-4 flex flex-row">
+              <div class="my-4 flex flex-row" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 <img
                     alt="Author's Image"
                     class="rounded-full max-h-12 ring-2 ring-pink-500 p-1 h-12 w-12"
@@ -204,11 +204,11 @@
             </div>
           </div>
 
-          <div class="text-center lg:text-right">
+          <div class="text-center lg:text-right" >
             <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
           </div>
-          <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="tech-stack border border-red-200 shadow-lg">
+          <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" data-aos="zoom-out-up" data-aos-easing="ease-in-out">
+            <div class="tech-stack border border-red-200 shadow-lg" >
 
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#F83F37" height="50" viewBox="0 0 24 24" width="50">
@@ -218,7 +218,7 @@
               </i>
               <div class="mx-auto pt-3">Laravel</div>
             </div>
-            <div class="tech-stack border border-green-200 shadow-lg">
+            <div class="tech-stack border border-green-200 shadow-lg" >
               <i class="text-center mx-auto transform scale-150">
                 <svg fill="#689F63" height="50" viewBox="0 0 24 24" width="50">
                   <path
@@ -315,12 +315,6 @@
     <div class="paps-container">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="mb-6">
-          <div class="text-start text-gray-500">
-            <svg height="24" viewBox="0 0 24 24" width="24" opacity=".5">
-              <path
-                  d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"/>
-            </svg>
-          </div>
           <div class="text-2xl lg:text-6xl font-bold md:max-w-md">My Blog and News</div>
           <div class="">
             <button
@@ -364,7 +358,7 @@
 
   <section id="contact" class="paps-container mt-12 relative overflow-hidden" data-aos="zoom-in"
            data-aos-easing="ease-in-out">
-    <div class="lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
+    <div class="rounded-t-lg lg:rounded-3xl overflow-hidden h-48 lg:h-96 bg-blue-200">
       <div class="text-center pt-8 lg:pt-16">
         <div class="uppercase pb-2 lg:pb-6 text-lg  text-gray-400">Contact me</div>
         <div class="text-2xl px-2 lg:px-0 lg:text-4xl font-bold">Got a Project? Let's Talk</div>

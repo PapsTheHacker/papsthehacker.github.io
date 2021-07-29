@@ -18,10 +18,6 @@
           </a>
         </li>
         <li class="pr-8">
-          <a class="hover:border-indigo-900 border-b transition duration-500" href="#services">Services
-          </a>
-        </li>
-        <li class="pr-8">
           <a class="hover:border-indigo-900 border-b transition duration-500" href="#blogs">Blog
           </a>
         </li>
