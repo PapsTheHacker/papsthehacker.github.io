@@ -32,7 +32,8 @@ pa-10
               class="
                 ring-2
                 text-pink-500
-                ring-pink-500
+
+                ring-white
                 hover:bg-pink-200
                 max-w-max
                 text-center

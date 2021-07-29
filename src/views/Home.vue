@@ -207,7 +207,7 @@
           <div class="text-center lg:text-right" >
             <div class="text-2xl lg:text-5xl font-bold">Tech Stack</div>
           </div>
-          <div class="py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" data-aos="fade-up" data-aos-easing="ease-in-out">
+          <div class="py-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="tech-stack border border-red-200 shadow-lg" >
 
               <i class="text-center mx-auto transform scale-150">
