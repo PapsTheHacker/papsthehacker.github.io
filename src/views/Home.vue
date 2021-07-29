@@ -322,6 +322,7 @@
               Find out more &longrightarrow;
             </button>
           </div>
+
         </div>
         <div>
           <ul v-for="blog in blogs" :key="blog.title" class="overflow-hidden">
@@ -376,8 +377,8 @@
         <div class="container  mx-auto px-10">
 
           <div class="hidden lg:flex w-full pt-16  pb-12 flex-row justify-between">
-            <div class="max-h-20">
-              <img alt="Logo" class="rounded-full h-12 lg:h-20 w-12 lg:w-20" src="/promise-as-logo.jpg">
+            <div class="max-h-16 pb-10">
+              <img alt="Logo" class="rounded-full  h-10 lg:h-14 w-10 lg:w-14" src="/promise-as-logo.jpg">
             </div>
             <div class="my-auto ml-auto">
               <ul class="flex flex-row my-auto">
